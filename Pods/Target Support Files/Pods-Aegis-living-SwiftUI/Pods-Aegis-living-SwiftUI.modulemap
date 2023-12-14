@@ -1,0 +1,6 @@
+framework module Pods_Aegis_living_SwiftUI {
+  umbrella header "Pods-Aegis-living-SwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

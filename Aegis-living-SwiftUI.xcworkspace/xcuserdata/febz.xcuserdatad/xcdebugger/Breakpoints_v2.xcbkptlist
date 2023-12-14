@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D77F5CA6-911F-4662-B589-4DF8BB47FE45"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D270954-F5B2-4A4C-8236-887E7CC3F828"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Screens/LoginView/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "loginUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D270954-F5B2-4A4C-8236-887E7CC3F828 - 3bee347c1054ff5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Aegis_living_SwiftUI.LoginModel&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in Aegis_living_SwiftUI.LoginViewModel.loginUser() -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/LoginView/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1436">
+               </Location>
+               <Location
+                  uuid = "1D270954-F5B2-4A4C-8236-887E7CC3F828 - 64abdbbca47f3407"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.LoginModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.LoginViewModel.loginUser() -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/LoginView/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D00A13C-1C9F-4A24-8D45-9B30AD211B6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "makePostRequest(_:parameters:modelType:isHeader:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7D00A13C-1C9F-4A24-8D45-9B30AD211B6D - c38f8c14f8a09599"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Aegis_living_SwiftUI.NetworkManager.makePostRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, modelType: &#x3c4;_0_0.Type, isHeader: Swift.Bool, completionHandler: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1112">
+               </Location>
+               <Location
+                  uuid = "7D00A13C-1C9F-4A24-8D45-9B30AD211B6D - 4d282e629f4b5e7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Aegis_living_SwiftUI.NetworkManager.makePostRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, modelType: &#x3c4;_0_0.Type, isHeader: Swift.Bool, completionHandler: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A178ED3-9D02-49E0-9F1A-B563447E967F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "makePostRequest(_:parameters:modelType:isHeader:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6A178ED3-9D02-49E0-9F1A-B563447E967F - c38f8c14f8a09776"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Aegis_living_SwiftUI.NetworkManager.makePostRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, modelType: &#x3c4;_0_0.Type, isHeader: Swift.Bool, completionHandler: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2148">
+               </Location>
+               <Location
+                  uuid = "6A178ED3-9D02-49E0-9F1A-B563447E967F - 4d282e629f4b5d8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Aegis_living_SwiftUI.NetworkManager.makePostRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, modelType: &#x3c4;_0_0.Type, isHeader: Swift.Bool, completionHandler: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1808">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3A51185-2748-420B-A899-D79B34BCE2C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "makePostRequest(_:parameters:modelType:isHeader:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C3A51185-2748-420B-A899-D79B34BCE2C1 - c38f8c14f8a09566"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Aegis_living_SwiftUI.NetworkManager.makePostRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, modelType: &#x3c4;_0_0.Type, isHeader: Swift.Bool, completionHandler: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "C3A51185-2748-420B-A899-D79B34BCE2C1 - 4d282e629f4b5e84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Aegis_living_SwiftUI.NetworkManager.makePostRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, modelType: &#x3c4;_0_0.Type, isHeader: Swift.Bool, completionHandler: (Swift.Result&lt;Swift.Optional&lt;&#x3c4;_0_0&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/SupportFiles/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "652">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
