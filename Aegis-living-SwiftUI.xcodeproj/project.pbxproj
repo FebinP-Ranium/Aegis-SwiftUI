@@ -3,22 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D9BA9E52B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E42B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift */; };
-		0D9BA9E72B29DE34001D5AFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E62B29DE34001D5AFA /* ContentView.swift */; };
+		0D9BA9E72B29DE34001D5AFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E62B29DE34001D5AFA /* LoginView.swift */; };
 		0D9BA9E92B29DE35001D5AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E82B29DE35001D5AFA /* Assets.xcassets */; };
 		0D9BA9EC2B29DE35001D5AFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BA9EB2B29DE35001D5AFA /* Preview Assets.xcassets */; };
+		0D9BA9F52B2ABEB4001D5AFA /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9F32B2ABEB4001D5AFA /* String+Ext.swift */; };
+		0D9BA9F62B2ABEB4001D5AFA /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9F42B2ABEB4001D5AFA /* Color+Ext.swift */; };
+		0D9BA9F82B2AC29B001D5AFA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BA9F72B2AC29B001D5AFA /* Launch Screen.storyboard */; };
+		0D9BA9FC2B2AC369001D5AFA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9FB2B2AC369001D5AFA /* LoginViewModel.swift */; };
+		0D9BA9FE2B2AC374001D5AFA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9FD2B2AC374001D5AFA /* LoginModel.swift */; };
+		0D9BAA012B2AC4FA001D5AFA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA002B2AC4FA001D5AFA /* NetworkManager.swift */; };
+		0D9BAA032B2AC563001D5AFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA022B2AC563001D5AFA /* Constants.swift */; };
+		0D9BAA062B2ACAF1001D5AFA /* ResidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA052B2ACAF1001D5AFA /* ResidentView.swift */; };
+		0D9BAA092B2ACB73001D5AFA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA082B2ACB73001D5AFA /* Alert.swift */; };
+		0D9BAA0B2B2AD34E001D5AFA /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA0A2B2AD34E001D5AFA /* UserDataManager.swift */; };
+		0D9BAA0D2B2ADA3E001D5AFA /* FailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA0C2B2ADA3E001D5AFA /* FailModel.swift */; };
+		0D9BAA0F2B2ADB5C001D5AFA /* AegisError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAA0E2B2ADB5C001D5AFA /* AegisError.swift */; };
+		DA2F66F98C8895D79E43B7D7 /* Pods_Aegis_living_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99813EF52E8DA2B2498BFBD5 /* Pods_Aegis_living_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D9BA9E12B29DE34001D5AFA /* Aegis-living-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-living-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9BA9E42B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_living_SwiftUIApp.swift; sourceTree = "<group>"; };
-		0D9BA9E62B29DE34001D5AFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D9BA9E62B29DE34001D5AFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0D9BA9E82B29DE35001D5AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9BA9EB2B29DE35001D5AFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D9BA9F32B2ABEB4001D5AFA /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		0D9BA9F42B2ABEB4001D5AFA /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		0D9BA9F72B2AC29B001D5AFA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0D9BA9FB2B2AC369001D5AFA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0D9BA9FD2B2AC374001D5AFA /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		0D9BAA002B2AC4FA001D5AFA /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0D9BAA022B2AC563001D5AFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D9BAA052B2ACAF1001D5AFA /* ResidentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentView.swift; sourceTree = "<group>"; };
+		0D9BAA082B2ACB73001D5AFA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		0D9BAA0A2B2AD34E001D5AFA /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		0D9BAA0C2B2ADA3E001D5AFA /* FailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailModel.swift; sourceTree = "<group>"; };
+		0D9BAA0E2B2ADB5C001D5AFA /* AegisError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AegisError.swift; sourceTree = "<group>"; };
+		48C940189C15E570A36878D7 /* Pods-Aegis-living-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aegis-living-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		4EEC9A0873D46D8DE486F8B2 /* Pods-Aegis-living-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aegis-living-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		99813EF52E8DA2B2498BFBD5 /* Pods_Aegis_living_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aegis_living_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2F66F98C8895D79E43B7D7 /* Pods_Aegis_living_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +66,8 @@
 			children = (
 				0D9BA9E32B29DE34001D5AFA /* Aegis-living-SwiftUI */,
 				0D9BA9E22B29DE34001D5AFA /* Products */,
+				18E794F5A22B4C8FF7141CD1 /* Pods */,
+				42A92E41191540C0B2CB66CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +82,13 @@
 		0D9BA9E32B29DE34001D5AFA /* Aegis-living-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0D9BAA072B2ACB56001D5AFA /* Utilities */,
+				0D9BA9FF2B2AC4E1001D5AFA /* SupportFiles */,
+				0D9BA9F92B2AC33E001D5AFA /* Screens */,
+				0D9BA9F22B2ABEB4001D5AFA /* Extensions */,
 				0D9BA9E42B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift */,
-				0D9BA9E62B29DE34001D5AFA /* ContentView.swift */,
 				0D9BA9E82B29DE35001D5AFA /* Assets.xcassets */,
+				0D9BA9F72B2AC29B001D5AFA /* Launch Screen.storyboard */,
 				0D9BA9EA2B29DE35001D5AFA /* Preview Content */,
 			);
 			path = "Aegis-living-SwiftUI";
@@ -67,6 +102,79 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0D9BA9F22B2ABEB4001D5AFA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BA9F32B2ABEB4001D5AFA /* String+Ext.swift */,
+				0D9BA9F42B2ABEB4001D5AFA /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D9BA9F92B2AC33E001D5AFA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BAA042B2ACAD0001D5AFA /* ResidentView */,
+				0D9BA9FA2B2AC34B001D5AFA /* LoginView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0D9BA9FA2B2AC34B001D5AFA /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BA9E62B29DE34001D5AFA /* LoginView.swift */,
+				0D9BA9FB2B2AC369001D5AFA /* LoginViewModel.swift */,
+				0D9BA9FD2B2AC374001D5AFA /* LoginModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		0D9BA9FF2B2AC4E1001D5AFA /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BAA002B2AC4FA001D5AFA /* NetworkManager.swift */,
+				0D9BAA022B2AC563001D5AFA /* Constants.swift */,
+				0D9BAA0A2B2AD34E001D5AFA /* UserDataManager.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		0D9BAA042B2ACAD0001D5AFA /* ResidentView */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BAA052B2ACAF1001D5AFA /* ResidentView.swift */,
+			);
+			path = ResidentView;
+			sourceTree = "<group>";
+		};
+		0D9BAA072B2ACB56001D5AFA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BAA082B2ACB73001D5AFA /* Alert.swift */,
+				0D9BAA0E2B2ADB5C001D5AFA /* AegisError.swift */,
+				0D9BAA0C2B2ADA3E001D5AFA /* FailModel.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		18E794F5A22B4C8FF7141CD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EEC9A0873D46D8DE486F8B2 /* Pods-Aegis-living-SwiftUI.debug.xcconfig */,
+				48C940189C15E570A36878D7 /* Pods-Aegis-living-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42A92E41191540C0B2CB66CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99813EF52E8DA2B2498BFBD5 /* Pods_Aegis_living_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D9BA9EF2B29DE35001D5AFA /* Build configuration list for PBXNativeTarget "Aegis-living-SwiftUI" */;
 			buildPhases = (
+				CA4454CC28232A4EB86DCE9F /* [CP] Check Pods Manifest.lock */,
 				0D9BA9DD2B29DE34001D5AFA /* Sources */,
 				0D9BA9DE2B29DE34001D5AFA /* Frameworks */,
 				0D9BA9DF2B29DE34001D5AFA /* Resources */,
+				810B652B7C095E4F2186C163 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +213,7 @@
 				};
 			};
 			buildConfigurationList = 0D9BA9DC2B29DE34001D5AFA /* Build configuration list for PBXProject "Aegis-living-SwiftUI" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9BA9F82B2AC29B001D5AFA /* Launch Screen.storyboard in Resources */,
 				0D9BA9EC2B29DE35001D5AFA /* Preview Assets.xcassets in Resources */,
 				0D9BA9E92B29DE35001D5AFA /* Assets.xcassets in Resources */,
 			);
@@ -132,13 +243,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		810B652B7C095E4F2186C163 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA4454CC28232A4EB86DCE9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aegis-living-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D9BA9DD2B29DE34001D5AFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9BA9E72B29DE34001D5AFA /* ContentView.swift in Sources */,
+				0D9BA9F52B2ABEB4001D5AFA /* String+Ext.swift in Sources */,
+				0D9BAA062B2ACAF1001D5AFA /* ResidentView.swift in Sources */,
+				0D9BAA0F2B2ADB5C001D5AFA /* AegisError.swift in Sources */,
+				0D9BA9FE2B2AC374001D5AFA /* LoginModel.swift in Sources */,
+				0D9BA9F62B2ABEB4001D5AFA /* Color+Ext.swift in Sources */,
+				0D9BAA012B2AC4FA001D5AFA /* NetworkManager.swift in Sources */,
+				0D9BAA0B2B2AD34E001D5AFA /* UserDataManager.swift in Sources */,
+				0D9BA9E72B29DE34001D5AFA /* LoginView.swift in Sources */,
+				0D9BAA0D2B2ADA3E001D5AFA /* FailModel.swift in Sources */,
+				0D9BA9FC2B2AC369001D5AFA /* LoginViewModel.swift in Sources */,
 				0D9BA9E52B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift in Sources */,
+				0D9BAA092B2ACB73001D5AFA /* Alert.swift in Sources */,
+				0D9BAA032B2AC563001D5AFA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +425,7 @@
 		};
 		0D9BA9F02B29DE35001D5AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEC9A0873D46D8DE486F8B2 /* Pods-Aegis-living-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +455,7 @@
 		};
 		0D9BA9F12B29DE35001D5AFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C940189C15E570A36878D7 /* Pods-Aegis-living-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
