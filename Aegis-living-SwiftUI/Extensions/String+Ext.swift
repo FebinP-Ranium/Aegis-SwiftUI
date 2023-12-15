@@ -14,4 +14,9 @@ extension String {
         let emailPredicate      = NSPredicate(format: "SELF MATCHES %@", emailFormat)
         return emailPredicate.evaluate(with: self)
     }
+   
+        func capitalizingFirstLetter() -> String {
+            return prefix(1).capitalized + dropFirst()
+        }
+    
 }

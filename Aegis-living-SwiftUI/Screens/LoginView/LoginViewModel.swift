@@ -50,26 +50,7 @@ final class LoginViewModel:ObservableObject{
                 }
             }
             
-//            if code == Constants.INTERNETFAILCODE{
-//                self.alertItem = AlertContext.unableToComplete
-//                return
-//            }
-//            if let error = error {
-//                print("Error: \(error)")
-//
-//                self.alertItem = AlertContext.unSuccesfulLogin
-//                return
-//
-//            }
-//            else{
-//                if let loginResponse = data{
-//                    self.userManager.saveUserData(loginResponse)
-//                    self.isShowResidentView = true
-//
-//                    print(loginResponse.data)
-//
-//                }
-//            }
+
         }
     }
     

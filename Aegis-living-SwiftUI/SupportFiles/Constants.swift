@@ -29,6 +29,8 @@ class Constants {
     
 
     static let LOGINAPI = "family-auth"
+    static let SWITCHACCOUNT = "familylink/v1/residents/index"
+
    
     //====================================
     //MARK: API response text
@@ -68,6 +70,16 @@ class Constants {
     static let AUTHTOKEN = "AuthToken"
     static let SHOWATTENDANCE = "showAttendance"
     static let HASPARTNER = "hasPartner"
+    
+    static let P_COMMUNITYNAME = "p_communityName"
+    static let P_COMMUNITYID = "p_communityId"
+    static let P_RESIDENTID = "p_residentId"
+    static let P_ROOM = "p_room"
+    static let P_FIRSTNAME = "p_firstName"
+    static let P_LASTNAME = "p_lastName"
+    static let P_IMAGE = "p_image"
+    static let P_SHOWATTENDANCE = "p_showAttendance"
+    
 
     
 }

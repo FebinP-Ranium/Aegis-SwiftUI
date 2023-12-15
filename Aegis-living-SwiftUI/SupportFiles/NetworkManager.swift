@@ -20,7 +20,8 @@ final class NetworkManager {
     
     static let shared = NetworkManager()
     static let baseURL = Constants.USERHOST
-    
+    private let cache = NSCache<NSString,UIImage>()
+
 //    func headers() -> HTTPHeaders {
 //        let authToken = UserDefaults.standard.string(forKey: Constants.AUTHTOKEN)
 //        //        var headers: HTTPHeaders = [
@@ -46,7 +47,7 @@ final class NetworkManager {
         print("URL -\(strURL),parameters - \(parameters)")
         var headers: HTTPHeaders = [:]
         if isHeader, let authToken = UserDefaults.standard.string(forKey: Constants.AUTHTOKEN) {
-            headers["Authorization"] = "pear " + authToken
+            headers["Authorization"] = "Bearer" + authToken
         }
         print(headers)
         
@@ -90,7 +91,7 @@ final class NetworkManager {
         print("URL -\(strURL)")
         var headers: HTTPHeaders = [:]
         if isHeader, let authToken = UserDefaults.standard.string(forKey: Constants.AUTHTOKEN) {
-            headers["Authorization"] = "pear " + authToken
+            headers["Authorization"] = "Bearer" + authToken
         }
         print(headers)
         
@@ -146,7 +147,7 @@ final class NetworkManager {
           print("URL -\(strURL)")
            
             
-            let token = String(format: "pear %@", UserDefaults.standard.object(forKey: Constants.AUTHTOKEN) as! String)
+            let token = String(format: "Bearer %@", UserDefaults.standard.object(forKey: Constants.AUTHTOKEN) as! String)
                  
             let headers : HTTPHeaders = ["Authorization":token,
                                          "Content-Type": "multipart/form-data"
@@ -194,6 +195,30 @@ final class NetworkManager {
                 }
             
         
+        
+    }
+    
+    func downloadImage(fromURLStrings urlstring:String,completed:@escaping(UIImage?)->Void){
+        let cacheKey = NSString(string: urlstring)
+        if let image = cache.object(forKey: cacheKey){
+            completed(image)
+            return
+        }
+        guard let url = URL(string:urlstring) else{
+            completed(nil)
+            return
+        }
+        let task = URLSession.shared.dataTask(with: URLRequest(url:url)){
+            data,response,error in
+            
+            guard let data = data,let image = UIImage(data: data) else{
+                completed(nil)
+                return
+            }
+            self.cache.setObject(image, forKey: cacheKey)
+            completed(image)
+        }
+        task.resume()
         
     }
 }
