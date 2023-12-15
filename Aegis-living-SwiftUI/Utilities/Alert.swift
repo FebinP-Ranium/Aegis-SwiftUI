@@ -45,5 +45,13 @@ struct AlertContext{
     static let unSuccesfulLogin = AlertItem(title: Text("User Alert"),
                                             message: Text("Not able to login, Please try after sometime"),
                                            dismissButtonText: Text("OK"))
+    
+    /// ////////////////////////////////////////////////////////////////////////////////////////
+    // MARK: - common alert
+    /// ////////////////////////////////////////////////////////////////////////////////////////
+    
+    static let nullDataAlert = AlertItem(title: Text("Server Error"),
+                                            message: Text(""),
+                                           dismissButtonText: Text("OK"))
 }
 
