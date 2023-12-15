@@ -102,5 +102,27 @@ class UserDataManager{
             let fullName = "\(firstName) \(lastName)"
             return fullName.capitalizingFirstLetter()
         }
+    
+    func userLogout(){
+        communityName = ""
+        communityId = 0
+        residentId = 0
+        room = 0
+        firstName = ""
+        lastName = ""
+        image = ""
+        isUserLoggedIn = false
+        token = ""
+        showAttendance = 0
+        hasPartner = false
+        p_communityName = ""
+        p_communityId = 0
+        p_residentId = 0
+        p_room = 0
+        p_firstName = ""
+        p_lastName = ""
+        p_image = ""
+        p_showAttendance = 0
+    }
 
 }

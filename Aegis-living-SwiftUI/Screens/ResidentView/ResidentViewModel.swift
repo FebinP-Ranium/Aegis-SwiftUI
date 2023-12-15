@@ -11,7 +11,7 @@ final class ResidentViewModel:ObservableObject{
     
     @Published var isLoading = false
     @Published var alertItem:AlertItem?
-
+    @Published var isLoggedIn = true
     let userManager = UserDataManager()
 
     
@@ -46,6 +46,10 @@ final class ResidentViewModel:ObservableObject{
             
 
         }
+    }
+    func callForLogout(){
+        userManager.userLogout()
+        isLoggedIn = userManager.isUserLoggedIn
     }
     
 }

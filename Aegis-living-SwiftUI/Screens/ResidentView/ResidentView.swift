@@ -12,39 +12,57 @@ struct ResidentView: View {
     @StateObject var viewModel = ResidentViewModel()
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.backGroundColor
-                    .ignoresSafeArea()
+        if !viewModel.isLoggedIn{
 
-                VStack {
-                    if viewModel.userManager.hasPartner {
-                        PartnerView(viewModel: viewModel)
-                    }
-
-                    UserView(viewModel: viewModel)
-
-                    CategoryButtonsView(viewModel: viewModel)
-
-                    Spacer()
-                }
-
-                if viewModel.isLoading {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle())
-                        .scaleEffect(1.0, anchor: .center)
-                        .foregroundColor(Color.brandPrimaryColor)
-                }
-            }
-            .navigationBarTitle(Text(""), displayMode: .inline)
-            .navigationBarItems(leading: CustomNavigationBar(isShowBackButton: false, isShowLogoutButon: true))
+            LoginView()
         }
-        .alert(item: $viewModel.alertItem) { alertItem in
-            Alert(
-                title: alertItem.title,
-                message: alertItem.message,
-                dismissButton: .default(alertItem.dismissButtonText)
-            )
+        else{
+            NavigationView {
+                ZStack {
+                    Color.backGroundColor
+                        .ignoresSafeArea()
+                    
+                    VStack {
+                        if viewModel.userManager.hasPartner {
+                            PartnerView(viewModel: viewModel)
+                        }
+                        
+                        UserView(viewModel: viewModel)
+                        
+                        CategoryButtonsView(viewModel: viewModel)
+                        
+                        Spacer()
+                    }
+                    
+                    if viewModel.isLoading {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
+                            .scaleEffect(1.0, anchor: .center)
+                            .foregroundColor(Color.brandPrimaryColor)
+                    }
+                    
+                }
+                .navigationBarTitle(Text(""), displayMode: .inline)
+                .navigationBarItems(leading: HStack{CustomNavigationBar(isShowBackButton: false, isShowLogoutButon: true)
+                    Button{
+                        
+                        viewModel.callForLogout()
+                        
+                    }label: {
+                        Text("Logout")
+                    }
+                })
+            }
+            .onAppear{
+                print(viewModel.userManager.isUserLoggedIn)
+            }
+            .alert(item: $viewModel.alertItem) { alertItem in
+                Alert(
+                    title: alertItem.title,
+                    message: alertItem.message,
+                    dismissButton: .default(alertItem.dismissButtonText)
+                )
+            }
         }
     }
 }
