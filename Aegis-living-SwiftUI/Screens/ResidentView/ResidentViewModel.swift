@@ -19,7 +19,7 @@ final class ResidentViewModel:ObservableObject{
     func switchUser(id:Int){
         self.isLoading = true
         
-        NetworkManager.shared.makePostRequest( Constants.SWITCHACCOUNT, parameters: ["id":0], modelType: ResidentModel.self, isHeader: true){    result in
+        NetworkManager.shared.makePostRequest( Constants.SWITCHACCOUNT, parameters: ["id":id], modelType: ResidentModel.self, isHeader: true){    result in
             
             self.isLoading = false
             
@@ -67,7 +67,7 @@ final class ResidentViewModel:ObservableObject{
             case .engagement:
                 EventView()
             case .notification:
-                EventView()
+               NotificationView()
             }
         } else {
             EmptyView()

@@ -17,7 +17,7 @@ struct EventView: View {
                 Color.backGroundColor.ignoresSafeArea()
                 VStack {
                    
-                    TitleView(viewModel: viewModel)
+                    CustomTitleView(title: "Today's Event")
                    
                     HeaderView(viewModel: viewModel)
                     
@@ -58,6 +58,15 @@ struct EventView: View {
         }
         
         .navigationBarBackButtonHidden(true)
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(
+                title: alertItem.title,
+                message: alertItem.message,
+                dismissButton: .default(alertItem.dismissButtonText){
+                }
+            )
+        }
+        
     }
 }
 
@@ -66,22 +75,7 @@ struct EventView_Previews: PreviewProvider {
         EventView()
     }
 }
-struct TitleView:View{
-    @ObservedObject var viewModel: EventViewModel
 
-    var body: some View {
-        HStack{
-            Text("Today's Event")
-                .font(Font.custom("Avenir Heavy", size: 26.0))
-                .foregroundColor(.textPrimaryColor)
-            Spacer()
-            WebImageView(url: URL(string:viewModel.userManager.image))
-                .frame(width: 80, height: 80)
-                .cornerRadius(45)
-            
-        }.padding()
-    }
-}
 struct HeaderView:View{
     @ObservedObject var viewModel: EventViewModel
 
