@@ -10,13 +10,10 @@ import SDWebImageSwiftUI
 
 struct ResidentView: View {
     @StateObject var viewModel = ResidentViewModel()
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
-        if !viewModel.isLoggedIn{
 
-            LoginView()
-        }
-        else{
             NavigationView {
                 ZStack {
                     Color.backGroundColor
@@ -30,7 +27,19 @@ struct ResidentView: View {
                         UserView(viewModel: viewModel)
                         
                         CategoryButtonsView(viewModel: viewModel)
-                        
+                       
+                        NavigationLink(
+                            destination: viewModel.getViewForCategory(),
+                            isActive: Binding<Bool>(
+                                get: { viewModel.categoryName != nil }, // Check if categoryName has a value
+                                set: { _ in } // Empty set, as we don't need to modify the isActive binding directly
+                            ),
+                            label: {
+                                EmptyView()
+                            }
+                        )
+
+                       
                         Spacer()
                     }
                     
@@ -42,17 +51,22 @@ struct ResidentView: View {
                     }
                     
                 }
+                .onAppear{
+                    viewModel.categoryName = nil
+                }
                 .navigationBarTitle(Text(""), displayMode: .inline)
-                .navigationBarItems(leading: HStack{CustomNavigationBar(isShowBackButton: false, isShowLogoutButon: true)
+                .navigationBarItems(leading: HStack{CustomNavigationBar()
                     Button{
                         
                         viewModel.callForLogout()
+                        presentationMode.wrappedValue.dismiss()
                         
                     }label: {
                         Text("Logout")
                     }
                 })
             }
+            .navigationBarBackButtonHidden(true)
             .onAppear{
                 print(viewModel.userManager.isUserLoggedIn)
             }
@@ -60,11 +74,16 @@ struct ResidentView: View {
                 Alert(
                     title: alertItem.title,
                     message: alertItem.message,
-                    dismissButton: .default(alertItem.dismissButtonText)
+                    dismissButton: .default(alertItem.dismissButtonText){
+                        viewModel.callForLogout()
+                        presentationMode.wrappedValue.dismiss()
+                    }
                 )
             }
-        }
+  
     }
+    
+   
 }
 
 struct PartnerView: View {
@@ -123,17 +142,17 @@ struct CategoryButtonsView: View {
     var body: some View {
         VStack {
             HStack {
-                CategoryButtonView(imageName: "events")
-                CategoryButtonView(imageName: "photos")
-                CategoryButtonView(imageName: "life-story")
+                CategoryButtonView(imageName: "events", tagValue: 1, categorySelected: $viewModel.categoryName)
+                CategoryButtonView(imageName: "photos",tagValue: 2,categorySelected: $viewModel.categoryName)
+                CategoryButtonView(imageName: "life-story",tagValue: 3,categorySelected: $viewModel.categoryName)
             }
 
             HStack {
                 if viewModel.userManager.showAttendance == 1 {
-                    CategoryButtonView(imageName: "attendance")
+                    CategoryButtonView(imageName: "attendance",tagValue: 4,categorySelected: $viewModel.categoryName)
                 }
-                CategoryButtonView(imageName: "enge-bold")
-                CategoryButtonView(imageName: "notification")
+                CategoryButtonView(imageName: "enge-bold",tagValue: 5,categorySelected: $viewModel.categoryName)
+                CategoryButtonView(imageName: "notification",tagValue: 6,categorySelected: $viewModel.categoryName)
             }
         }
     }

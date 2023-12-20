@@ -12,6 +12,7 @@ final class LoginViewModel:ObservableObject{
     @Published var isShowResidentView = false
     @Published var alertItem:AlertItem?
     @Published var isLoading = false
+    @Published var rootpresentng:Bool = false
 
     let userManager = UserDataManager()
     func loginUser() {
@@ -59,5 +60,9 @@ final class LoginViewModel:ObservableObject{
         self.userName = ""
         self.password = ""
        }
+    
+    func checkForLogin(){
+        self.isShowResidentView = userManager.isUserLoggedIn
+    }
     
 }

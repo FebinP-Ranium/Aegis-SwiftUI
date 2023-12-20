@@ -30,6 +30,7 @@ class Constants {
 
     static let LOGINAPI = "family-auth"
     static let SWITCHACCOUNT = "familylink/v1/residents/index"
+    static let EVENTLIST = "familylink/v1/residents/events"
 
    
     //====================================

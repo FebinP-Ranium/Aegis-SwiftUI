@@ -10,6 +10,14 @@
 		0D6B39122B2C2B4B00F612FF /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */; };
 		0D6B39142B2C331700F612FF /* ResidentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39132B2C331700F612FF /* ResidentViewModel.swift */; };
 		0D6B39162B2C332500F612FF /* ResidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39152B2C332500F612FF /* ResidentModel.swift */; };
+		0D6B391A2B31520500F612FF /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39192B31520500F612FF /* EventView.swift */; };
+		0D6B391C2B31521400F612FF /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B391B2B31521400F612FF /* EventViewModel.swift */; };
+		0D6B391E2B31522100F612FF /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B391D2B31522100F612FF /* EventModel.swift */; };
+		0D6B39202B3155E700F612FF /* CategoryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B391F2B3155E700F612FF /* CategoryName.swift */; };
+		0D6B39232B315A3000F612FF /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39222B315A3000F612FF /* PhotosView.swift */; };
+		0D6B39252B31B69A00F612FF /* CustomBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39242B31B69A00F612FF /* CustomBackButtonView.swift */; };
+		0D6B39272B31BD6E00F612FF /* CornerRadiusStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39262B31BD6E00F612FF /* CornerRadiusStyleView.swift */; };
+		0D6B39292B31BE7800F612FF /* EventTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39282B31BE7800F612FF /* EventTableCellView.swift */; };
 		0D9BA9E52B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E42B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift */; };
 		0D9BA9E72B29DE34001D5AFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E62B29DE34001D5AFA /* LoginView.swift */; };
 		0D9BA9E92B29DE35001D5AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BA9E82B29DE35001D5AFA /* Assets.xcassets */; };
@@ -36,6 +44,14 @@
 		0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
 		0D6B39132B2C331700F612FF /* ResidentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentViewModel.swift; sourceTree = "<group>"; };
 		0D6B39152B2C332500F612FF /* ResidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentModel.swift; sourceTree = "<group>"; };
+		0D6B39192B31520500F612FF /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		0D6B391B2B31521400F612FF /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		0D6B391D2B31522100F612FF /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		0D6B391F2B3155E700F612FF /* CategoryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryName.swift; sourceTree = "<group>"; };
+		0D6B39222B315A3000F612FF /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		0D6B39242B31B69A00F612FF /* CustomBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonView.swift; sourceTree = "<group>"; };
+		0D6B39262B31BD6E00F612FF /* CornerRadiusStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyleView.swift; sourceTree = "<group>"; };
+		0D6B39282B31BE7800F612FF /* EventTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCellView.swift; sourceTree = "<group>"; };
 		0D9BA9E12B29DE34001D5AFA /* Aegis-living-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-living-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9BA9E42B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_living_SwiftUIApp.swift; sourceTree = "<group>"; };
 		0D9BA9E62B29DE34001D5AFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -74,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6B39182B31510400F612FF /* EventsView */ = {
+			isa = PBXGroup;
+			children = (
+				0D6B39192B31520500F612FF /* EventView.swift */,
+				0D6B391B2B31521400F612FF /* EventViewModel.swift */,
+				0D6B391D2B31522100F612FF /* EventModel.swift */,
+			);
+			name = EventsView;
+			sourceTree = "<group>";
+		};
+		0D6B39212B315A1B00F612FF /* PhotosView */ = {
+			isa = PBXGroup;
+			children = (
+				0D6B39222B315A3000F612FF /* PhotosView.swift */,
+			);
+			path = PhotosView;
+			sourceTree = "<group>";
+		};
 		0D9BA9D82B29DE34001D5AFA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +163,8 @@
 		0D9BA9F92B2AC33E001D5AFA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0D6B39212B315A1B00F612FF /* PhotosView */,
+				0D6B39182B31510400F612FF /* EventsView */,
 				0D9BAA042B2ACAD0001D5AFA /* ResidentView */,
 				0D9BA9FA2B2AC34B001D5AFA /* LoginView */,
 			);
@@ -171,6 +207,7 @@
 			children = (
 				0D9BAA082B2ACB73001D5AFA /* Alert.swift */,
 				0D9BAA0E2B2ADB5C001D5AFA /* AegisError.swift */,
+				0D6B391F2B3155E700F612FF /* CategoryName.swift */,
 				0D9BAA0C2B2ADA3E001D5AFA /* FailModel.swift */,
 			);
 			path = Utilities;
@@ -182,6 +219,9 @@
 				0D9BAA112B2B0722001D5AFA /* CustomNavigationBar.swift */,
 				0D9BAA132B2B0B53001D5AFA /* ProfilePicView.swift */,
 				0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */,
+				0D6B39242B31B69A00F612FF /* CustomBackButtonView.swift */,
+				0D6B39262B31BD6E00F612FF /* CornerRadiusStyleView.swift */,
+				0D6B39282B31BE7800F612FF /* EventTableCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,16 +367,24 @@
 				0D9BA9F62B2ABEB4001D5AFA /* Color+Ext.swift in Sources */,
 				0D9BAA012B2AC4FA001D5AFA /* NetworkManager.swift in Sources */,
 				0D6B39122B2C2B4B00F612FF /* CategoryButtonView.swift in Sources */,
+				0D6B39252B31B69A00F612FF /* CustomBackButtonView.swift in Sources */,
 				0D9BAA122B2B0722001D5AFA /* CustomNavigationBar.swift in Sources */,
 				0D9BAA0B2B2AD34E001D5AFA /* UserDataManager.swift in Sources */,
+				0D6B39232B315A3000F612FF /* PhotosView.swift in Sources */,
 				0D9BAA142B2B0B53001D5AFA /* ProfilePicView.swift in Sources */,
 				0D9BA9E72B29DE34001D5AFA /* LoginView.swift in Sources */,
+				0D6B39272B31BD6E00F612FF /* CornerRadiusStyleView.swift in Sources */,
 				0D9BAA0D2B2ADA3E001D5AFA /* FailModel.swift in Sources */,
+				0D6B39292B31BE7800F612FF /* EventTableCellView.swift in Sources */,
 				0D9BAA162B2B0D06001D5AFA /* RemoteImage.swift in Sources */,
 				0D9BA9FC2B2AC369001D5AFA /* LoginViewModel.swift in Sources */,
 				0D9BA9E52B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift in Sources */,
 				0D9BAA092B2ACB73001D5AFA /* Alert.swift in Sources */,
+				0D6B391E2B31522100F612FF /* EventModel.swift in Sources */,
 				0D9BAA032B2AC563001D5AFA /* Constants.swift in Sources */,
+				0D6B391C2B31521400F612FF /* EventViewModel.swift in Sources */,
+				0D6B391A2B31520500F612FF /* EventView.swift in Sources */,
+				0D6B39202B3155E700F612FF /* CategoryName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

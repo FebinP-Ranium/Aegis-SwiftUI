@@ -12,18 +12,6 @@ struct LoginView: View {
     let userManager = UserDataManager.shared
     
     var body: some View {
-        if viewModel.isShowResidentView || userManager.isUserLoggedIn {
-            ResidentView()
-        } else {
-            LoginContentView(viewModel: viewModel)
-        }
-    }
-}
-
-private struct LoginContentView: View {
-    @ObservedObject var viewModel: LoginViewModel
-    
-    var body: some View {
         NavigationView {
             ZStack {
                 Color.backGroundColor
@@ -41,7 +29,10 @@ private struct LoginContentView: View {
                     SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(.roundedBorder)
                         .autocapitalization(.none)
-                    
+                    NavigationLink(destination: ResidentView(), isActive: $viewModel.isShowResidentView) {
+                                       EmptyView() // Using EmptyView to hide the link visually
+                                   }
+
                     Button(action: {
                         viewModel.loginUser()
                     }) {
@@ -63,6 +54,9 @@ private struct LoginContentView: View {
                 }
             }
         }
+        .onAppear{
+            viewModel.checkForLogin()
+        }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(
                 title: alertItem.title,
@@ -74,6 +68,8 @@ private struct LoginContentView: View {
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

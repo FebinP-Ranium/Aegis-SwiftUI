@@ -11,14 +11,15 @@ final class ResidentViewModel:ObservableObject{
     
     @Published var isLoading = false
     @Published var alertItem:AlertItem?
-    @Published var isLoggedIn = true
+    @Published var categoryName:CategoryName?
+    @Published var isActiveCategory = false
     let userManager = UserDataManager()
 
     
     func switchUser(id:Int){
         self.isLoading = true
         
-        NetworkManager.shared.makePostRequest( Constants.SWITCHACCOUNT, parameters: ["id":id], modelType: ResidentModel.self, isHeader: true){    result in
+        NetworkManager.shared.makePostRequest( Constants.SWITCHACCOUNT, parameters: ["id":0], modelType: ResidentModel.self, isHeader: true){    result in
             
             self.isLoading = false
             
@@ -49,7 +50,27 @@ final class ResidentViewModel:ObservableObject{
     }
     func callForLogout(){
         userManager.userLogout()
-        isLoggedIn = userManager.isUserLoggedIn
     }
-    
+   
+    @ViewBuilder
+    func getViewForCategory() -> some View {
+        if let categoryName = categoryName {
+            switch categoryName {
+            case .events:
+                EventView()
+            case .photos:
+                PhotosView()
+            case .lifeStory:
+                EventView()
+            case .attendeance:
+                EventView()
+            case .engagement:
+                EventView()
+            case .notification:
+                EventView()
+            }
+        } else {
+            EmptyView()
+        }
+    }
 }
