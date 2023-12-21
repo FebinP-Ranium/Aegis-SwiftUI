@@ -33,6 +33,8 @@ class Constants {
     static let EVENTLIST = "familylink/v1/residents/events"
     static let NOTIFICATION = "familylink/v1/get-notifications"
     static let DELETENOTIFICATION = "familylink/v1/notifications/delete"
+    static let ENGAGEMENTVIDEO = "familylink/v1/engagement-videos"
+
 
    
     //====================================

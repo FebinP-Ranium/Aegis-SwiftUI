@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIRefresh
 
 struct NotificationView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -17,26 +18,7 @@ struct NotificationView: View {
                 Color.backGroundColor.ignoresSafeArea()
                 VStack{
                     CustomTitleView(title: "Notification")
-                    if(viewModel.notificatioList.count == 0 && !viewModel.isLoading){
-                        Text("No items to display")
-                                       .font(Font.custom("TrebuchetMS", size: 15))
-                                       .foregroundColor(.black)
-                                       .multilineTextAlignment(.center)
-                                       .padding()
-                    }
-                    else{
-                        List {
-                            ForEach(0..<viewModel.notificatioList.count, id: \.self) { index in
-                                if let notificationMsg = viewModel.notificatioList[index].message,let date = viewModel.notificatioList[index].created_at{
-                                    let dateStr = viewModel.UTCToLocal(UTCDateString: date)
-                                    NotificationTableCellView(timeString: dateStr, notificationTitle: notificationMsg).frame(height: 40)
-                                }
-                                
-                            }.onDelete(perform: deleteNotification)
-                        }.padding()
-                            .listStyle(PlainListStyle())
-                    }
-                    
+                    NotificationListView(viewModel: viewModel)
                 }
                 if viewModel.isLoading {
                     ProgressView()
@@ -65,6 +47,39 @@ struct NotificationView: View {
         .navigationBarBackButtonHidden(true)
     }
     
+    
+}
+struct NotificationListView:View{
+    @ObservedObject var viewModel: NotificationViewModel
+
+    var body: some View {
+        if(viewModel.notificatioList.count == 0 && !viewModel.isLoading){
+            Text("No items to display")
+                           .font(Font.custom("TrebuchetMS", size: 15))
+                           .foregroundColor(.black)
+                           .multilineTextAlignment(.center)
+                           .padding()
+        }
+        else{
+            List {
+                ForEach(0..<viewModel.notificatioList.count, id: \.self) { index in
+                    if let notificationMsg = viewModel.notificatioList[index].message,let date = viewModel.notificatioList[index].created_at{
+                        let dateStr = viewModel.UTCToLocal(UTCDateString: date)
+                        NotificationTableCellView(timeString: dateStr, notificationTitle: notificationMsg).frame(height: 40)
+                    }
+                    
+                }.onDelete(perform: deleteNotification)
+            } .pullToRefresh(isShowing: $viewModel.isRefreshing) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.viewModel.isRefreshing = false
+                    self.viewModel.getNotification()
+                }
+            }
+            .padding()
+                .listStyle(PlainListStyle())
+        }
+        
+    }
     func deleteNotification(at offsets: IndexSet) {
         for index in offsets {
             if let id = viewModel.notificatioList[index].id{
@@ -73,6 +88,7 @@ struct NotificationView: View {
 
         }
     }
+    
 }
 
 struct NotificationView_Previews: PreviewProvider {

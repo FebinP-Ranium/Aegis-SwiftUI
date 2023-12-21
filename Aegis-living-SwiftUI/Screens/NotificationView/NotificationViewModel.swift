@@ -12,6 +12,7 @@ final class NotificationViewModel:ObservableObject{
     @Published var isLoading = false
     @Published var alertItem:AlertItem?
     @Published var notificatioList = [Notification]()
+    @Published var isRefreshing = false
 
     
     func getNotification(){
