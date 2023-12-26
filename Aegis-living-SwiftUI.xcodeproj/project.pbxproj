@@ -21,6 +21,10 @@
 		0D368B2F2B3414B700A29209 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B2E2B3414B700A29209 /* VideoPlayerView.swift */; };
 		0D368B322B34610100A29209 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B312B34610100A29209 /* PhotosViewModel.swift */; };
 		0D368B342B34610F00A29209 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B332B34610F00A29209 /* PhotosModel.swift */; };
+		0D368B362B353C0A00A29209 /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B352B353C0A00A29209 /* PhotoGridView.swift */; };
+		0D368B382B356B5100A29209 /* PhotoShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B372B356B5100A29209 /* PhotoShowView.swift */; };
+		0D368B3C2B3AD70900A29209 /* ImageSourcePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B3B2B3AD70900A29209 /* ImageSourcePicker.swift */; };
+		0D368B3E2B3AD97400A29209 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B3D2B3AD97400A29209 /* ImagePicker.swift */; };
 		0D6B39122B2C2B4B00F612FF /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */; };
 		0D6B39142B2C331700F612FF /* ResidentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39132B2C331700F612FF /* ResidentViewModel.swift */; };
 		0D6B39162B2C332500F612FF /* ResidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39152B2C332500F612FF /* ResidentModel.swift */; };
@@ -69,6 +73,10 @@
 		0D368B2E2B3414B700A29209 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		0D368B312B34610100A29209 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		0D368B332B34610F00A29209 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		0D368B352B353C0A00A29209 /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
+		0D368B372B356B5100A29209 /* PhotoShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShowView.swift; sourceTree = "<group>"; };
+		0D368B3B2B3AD70900A29209 /* ImageSourcePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourcePicker.swift; sourceTree = "<group>"; };
+		0D368B3D2B3AD97400A29209 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
 		0D6B39132B2C331700F612FF /* ResidentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentViewModel.swift; sourceTree = "<group>"; };
 		0D6B39152B2C332500F612FF /* ResidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentModel.swift; sourceTree = "<group>"; };
@@ -164,6 +172,8 @@
 				0D6B39222B315A3000F612FF /* PhotosView.swift */,
 				0D368B312B34610100A29209 /* PhotosViewModel.swift */,
 				0D368B332B34610F00A29209 /* PhotosModel.swift */,
+				0D368B372B356B5100A29209 /* PhotoShowView.swift */,
+				0D368B3D2B3AD97400A29209 /* ImagePicker.swift */,
 			);
 			path = PhotosView;
 			sourceTree = "<group>";
@@ -272,6 +282,7 @@
 				0D9BAA0E2B2ADB5C001D5AFA /* AegisError.swift */,
 				0D6B391F2B3155E700F612FF /* CategoryName.swift */,
 				0D9BAA0C2B2ADA3E001D5AFA /* FailModel.swift */,
+				0D368B3B2B3AD70900A29209 /* ImageSourcePicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -289,6 +300,7 @@
 				0D368B1F2B3313A200A29209 /* NotificationTableCellView.swift */,
 				0D368B242B33F35400A29209 /* EngagementGridView.swift */,
 				0D368B2C2B3408FC00A29209 /* VideoListTablecell.swift */,
+				0D368B352B353C0A00A29209 /* PhotoGridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D368B232B33F2AD00A29209 /* EngangementView.swift in Sources */,
+				0D368B382B356B5100A29209 /* PhotoShowView.swift in Sources */,
 				0D6B39142B2C331700F612FF /* ResidentViewModel.swift in Sources */,
 				0D9BA9F52B2ABEB4001D5AFA /* String+Ext.swift in Sources */,
 				0D9BAA062B2ACAF1001D5AFA /* ResidentView.swift in Sources */,
@@ -436,6 +449,7 @@
 				0D368B272B3400A000A29209 /* EngagementModel.swift in Sources */,
 				0D9BA9FE2B2AC374001D5AFA /* LoginModel.swift in Sources */,
 				0D9BA9F62B2ABEB4001D5AFA /* Color+Ext.swift in Sources */,
+				0D368B3E2B3AD97400A29209 /* ImagePicker.swift in Sources */,
 				0D368B2B2B3407D100A29209 /* VideoListView.swift in Sources */,
 				0D368B2F2B3414B700A29209 /* VideoPlayerView.swift in Sources */,
 				0D9BAA012B2AC4FA001D5AFA /* NetworkManager.swift in Sources */,
@@ -450,10 +464,12 @@
 				0D9BA9E72B29DE34001D5AFA /* LoginView.swift in Sources */,
 				0D368B292B3400DA00A29209 /* EngagementViewModel.swift in Sources */,
 				0D6B39272B31BD6E00F612FF /* CornerRadiusStyleView.swift in Sources */,
+				0D368B362B353C0A00A29209 /* PhotoGridView.swift in Sources */,
 				0D368B2D2B3408FC00A29209 /* VideoListTablecell.swift in Sources */,
 				0D9BAA0D2B2ADA3E001D5AFA /* FailModel.swift in Sources */,
 				0D6B39292B31BE7800F612FF /* EventTableCellView.swift in Sources */,
 				0D368B1A2B330E8C00A29209 /* NotificationModel.swift in Sources */,
+				0D368B3C2B3AD70900A29209 /* ImageSourcePicker.swift in Sources */,
 				0D9BAA162B2B0D06001D5AFA /* RemoteImage.swift in Sources */,
 				0D9BA9FC2B2AC369001D5AFA /* LoginViewModel.swift in Sources */,
 				0D9BA9E52B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift in Sources */,

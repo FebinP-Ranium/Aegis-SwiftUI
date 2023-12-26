@@ -34,7 +34,8 @@ class Constants {
     static let NOTIFICATION = "familylink/v1/get-notifications"
     static let DELETENOTIFICATION = "familylink/v1/notifications/delete"
     static let ENGAGEMENTVIDEO = "familylink/v1/engagement-videos"
-
+    static let GALLERY = "familylink/v1/residents/gallery"
+    static let UPLOAD = "familylink/v1/family-upload"
 
    
     //====================================

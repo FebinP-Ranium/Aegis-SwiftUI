@@ -127,16 +127,15 @@ final class NetworkManager {
         }
     }
     
-    func imageUpload<T: Codable>(_ apiURl:String, parameters:Data, modelType: T.Type,isHeader:Bool, completionHandler: @escaping (_ result: T?, _ error: String?, _ code: Int?) -> Void) {
-        
-        
+    func imageUpload(_ apiURl:String, parameters:[String:Any],imageData:Data,imageName:String, mediaType: String,isHeader:Bool, completionHandler:  @escaping (Result<String?,AGError>) -> Void) {
+
+
         guard Connectivity.isConnectedToInternet else {
-            let message = "No Internet.Please try again"
-            completionHandler(nil,  message , Constants.INTERNETFAILCODE)
+            completionHandler(.failure(.unableToComplete))
             return
         }
-        
-          
+
+
            var strURL:String = Constants.USERHOST
            if((apiURl as NSString).length > 0)
            {
@@ -145,59 +144,61 @@ final class NetworkManager {
     //       _ = ["Content-Type": "application/x-www-form-urlencoded"]
     //       _ = ["Content-Type": "application/json"]
           print("URL -\(strURL)")
-           
-            
+
+
             let token = String(format: "Bearer %@", UserDefaults.standard.object(forKey: Constants.AUTHTOKEN) as! String)
-                 
+
             let headers : HTTPHeaders = ["Authorization":token,
                                          "Content-Type": "multipart/form-data"
             ]
 
-              AF.upload(multipartFormData: { MultipartFormData in
-
-               //  let image: Data = imageData
-
-                  // Add the image data to the request
-                  MultipartFormData.append(parameters, withName: "image", fileName: "Unknown-2.png", mimeType: "image/jpeg")
-                  MultipartFormData.append("profile".data(using: .utf8)!, withName: "name")
-                  
-                         
-              }, to: strURL, method: .post, headers: headers)
+        AF.upload(multipartFormData: { multipartFormData in
+            
+            //  let image: Data = imageData
+            
+            
+            multipartFormData.append(imageData, withName: "image", fileName: imageName, mimeType: mediaType)
+            
+            for (key, value) in parameters {
+                if let temp = value as? String {
+                    multipartFormData.append(temp.data(using: .utf8)!, withName: key )
+                }
+                if let temp = value as? Int {
+                    multipartFormData.append("\(temp)".data(using: .utf8)!, withName: key )
+                }
+                if let temp = value as? NSArray {
+                    temp.forEach({ element in
+                        let keyObj = key + "[]"
+                        if let string = element as? String {
+                            multipartFormData.append(string.data(using: .utf8)!, withName: keyObj)
+                        } else
+                        if let num = element as? Int {
+                            let value = "\(num)"
+                            multipartFormData.append(value.data(using: .utf8)!, withName: keyObj)
+                        }
+                    })
+                }
+                
+                
+            }
+        }, to: strURL, method: .post, headers: headers)
                 .responseData { response in
                     switch response.result {
                     case .success(let data):
-                        print(JSON(data))
-                        do {
-                            let decoder = JSONDecoder()
-                            let model = try decoder.decode(modelType, from: data)
-                            completionHandler(model, nil, response.response?.statusCode)
+                            completionHandler(.success("Success"))
                             return
-                        } catch {
-                            
-                            print(error)
-                            do{
-                                let decoder = JSONDecoder()
-                                let model = try decoder.decode(FailModel.self, from: data)
-                                completionHandler(nil, model.error, response.response?.statusCode)
-                                return
-                            }
-                            catch{
-                                completionHandler(nil, Constants.SERVERERROR, response.response?.statusCode)
-                                return
-                            }
-                            
-                        }
+                        
                     case .failure(let error):
-                        completionHandler(nil, Constants.SERVERERROR, response.response?.statusCode)
+                        completionHandler(.failure(.invalidResponse))
                         print(error)
                         return
                     }
                 }
-            
-        
-        
+
+
+
     }
-    
+   
     func downloadImage(fromURLStrings urlstring:String,completed:@escaping(UIImage?)->Void){
         let cacheKey = NSString(string: urlstring)
         if let image = cache.object(forKey: cacheKey){

@@ -53,5 +53,12 @@ struct AlertContext{
     static let nullDataAlert = AlertItem(title: Text("Server Error"),
                                             message: Text(""),
                                            dismissButtonText: Text("OK"))
+    /// ////////////////////////////////////////////////////////////////////////////////////////
+    // MARK: -image upload successful alert
+    /// ////////////////////////////////////////////////////////////////////////////////////////
+    
+    static let imageSuccessFullAlert = AlertItem(title: Text("Image Upload"),
+                                            message: Text("Image successfully uploaded. It may take a moment to process."),
+                                           dismissButtonText: Text("OK"))
 }
 
