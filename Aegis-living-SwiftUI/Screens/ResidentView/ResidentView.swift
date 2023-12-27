@@ -71,14 +71,28 @@ struct ResidentView: View {
                 print(viewModel.userManager.isUserLoggedIn)
             }
             .alert(item: $viewModel.alertItem) { alertItem in
-                Alert(
-                    title: alertItem.title,
-                    message: alertItem.message,
-                    dismissButton: .default(alertItem.dismissButtonText){
-                        viewModel.callForLogout()
-                        presentationMode.wrappedValue.dismiss()
-                    }
-                )
+
+                switch alertItem.secondaryButton {
+                      case .some(let secondaryButton):
+                          // Present an alert with two buttons
+                          return Alert(
+                              title: alertItem.title,
+                              message: alertItem.message,
+                              primaryButton: .default(alertItem.primaryButton),
+                              secondaryButton: .destructive(alertItem.secondaryButton ?? Text("Delete"))
+                          )
+                      case .none:
+                          // Present an alert with only the primary button
+                          return Alert(
+                              title: alertItem.title,
+                              message: alertItem.message,
+                              dismissButton: .default(alertItem.primaryButton){
+                                  if viewModel.alertType == .invalidData || viewModel.alertType == .invalidResponse{
+                                      
+                                  }
+                              }
+                          )
+                      }
             }
   
     }

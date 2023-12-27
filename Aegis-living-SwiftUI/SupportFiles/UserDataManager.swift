@@ -124,5 +124,10 @@ class UserDataManager{
         p_image = ""
         p_showAttendance = 0
     }
+  
+    func setProfilePic(imageLink:String){
+        image = imageLink
+
+    }
 
 }

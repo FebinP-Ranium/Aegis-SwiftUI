@@ -13,6 +13,8 @@ final class NotificationViewModel:ObservableObject{
     @Published var alertItem:AlertItem?
     @Published var notificatioList = [Notification]()
     @Published var isRefreshing = false
+    @Published var alertType:AlertType?
+
 
     
     func getNotification(){
@@ -33,15 +35,16 @@ final class NotificationViewModel:ObservableObject{
                 switch error{
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
-                    
+                    self.alertType = .invalidURL
                 case .invalidResponse:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
+                    self.alertType = .unableToComplete
                 }
             }
             
@@ -66,15 +69,16 @@ final class NotificationViewModel:ObservableObject{
                 switch error{
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
-                    
+                    self.alertType = .invalidURL
                 case .invalidResponse:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
+                    self.alertType = .unableToComplete
                 }
             }
             

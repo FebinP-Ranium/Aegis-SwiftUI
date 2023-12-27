@@ -198,6 +198,44 @@ final class NetworkManager {
 
 
     }
+    
+    func makeDeleteRequest<T: Codable>(_ apiURl:String, parameters:[String:Any], modelType: T.Type,isHeader:Bool, completionHandler: @escaping (Result<T?,AGError>) -> Void) {
+        guard Connectivity.isConnectedToInternet else {
+            completionHandler(.failure(.unableToComplete))
+            return
+        }
+        
+        let strURL = "\(Constants.USERHOST)\(apiURl)"
+        print("URL -\(strURL),parameters - \(parameters)")
+        var headers: HTTPHeaders = [:]
+        if isHeader, let authToken = UserDefaults.standard.string(forKey: Constants.AUTHTOKEN) {
+            headers["Authorization"] = "Bearer" + authToken
+        }
+        print(headers)
+        
+        AF.request(strURL, method: .delete, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseData { response in
+            switch response.result {
+            case .success(let data):
+                print(JSON(data))
+                do {
+                    let decoder = JSONDecoder()
+                    let model = try decoder.decode(modelType, from: data)
+                    completionHandler(.success(model))
+                    return
+                } catch {
+                    
+                       print(error)
+                        completionHandler(.failure(.invalidData))
+                        return
+                   
+                }
+            case .failure(let error):
+                completionHandler(.failure(.invalidResponse))
+                print(error)
+                return
+            }
+        }
+    }
    
     func downloadImage(fromURLStrings urlstring:String,completed:@escaping(UIImage?)->Void){
         let cacheKey = NSString(string: urlstring)

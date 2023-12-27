@@ -29,3 +29,7 @@ struct ResidentImage: Codable {
     let rotation: Int?
     let community_file_id: Int?
 }
+struct ProfilePicModel: Codable {
+    let data: String?
+    let response: String?
+}

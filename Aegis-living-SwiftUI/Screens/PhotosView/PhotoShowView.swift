@@ -9,10 +9,12 @@ import SwiftUI
 import SDWebImageSwiftUI
 struct PhotoShowView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var viewModel = PhotosViewModel()
-    var selectedPhotoArray = [ResidentImage]()
+    @StateObject var viewModel = PhotosViewModel()
+    @State  var selectedTabIndex = 0
+    @Binding var reloadView: Bool
 
-    @State private var selectedTabIndex = 0
+    var selectedPhotoArray = [ResidentImage]()
+    var appImageSelected = false
     var body: some View {
         NavigationView{
             ZStack{
@@ -20,24 +22,7 @@ struct PhotoShowView: View {
                
                 VStack{
                     Spacer()
-                    
-//                    ScrollView(.horizontal) {
-//                        LazyHStack(spacing: 0) {
-//                            ForEach(0..<viewModel.webPhotoArray.count, id: \.self)  { index in
-//                                if let imageUrl = viewModel.webPhotoArray[index].thumb{
-//
-//                                    WebImage(url: URL(string: imageUrl))
-//                                        .resizable()
-//                                        .placeholder(Image("user"))
-//                                        .indicator(.activity)
-//                                        .frame(width: UIScreen.main.bounds.size.width,height: 280)
-//                                        .padding(.horizontal, 20)
-//
-//                                }
-//                            }
-//                        }
-//
-//                    }
+
                     TabView(selection: $selectedTabIndex){
                         ForEach(0..<selectedPhotoArray.count, id: \.self)  { index in
                             if let imageUrl = selectedPhotoArray[index].thumb{
@@ -54,14 +39,11 @@ struct PhotoShowView: View {
                             }
                             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                     
-                    
-                    
-                    
                     Spacer()
                     HStack{
                         Spacer()
                         Button(action: {
-                            let totalTabs = viewModel.webPhotoArray.count // Number of tabs
+                            let totalTabs = selectedPhotoArray.count // Number of tabs
                                        withAnimation {
                                            selectedTabIndex = (selectedTabIndex - 1) % totalTabs
                                        }
@@ -74,7 +56,7 @@ struct PhotoShowView: View {
                         }).padding(.leading,10)
                         Spacer(minLength:150)
                         Button(action: {
-                            let totalTabs = viewModel.webPhotoArray.count // Number of tabs
+                            let totalTabs = selectedPhotoArray.count // Number of tabs
                                        withAnimation {
                                            selectedTabIndex = (selectedTabIndex + 1) % totalTabs
                                        }
@@ -87,7 +69,7 @@ struct PhotoShowView: View {
                         }).padding(.trailing,10)
                         Spacer(minLength:30)
                         Button(action: {
-                           
+                            viewModel.showActionSheet = true
                         },
                                label: {
                                Image(systemName:"square.and.arrow.up")
@@ -119,23 +101,82 @@ struct PhotoShowView: View {
                    
                     
                 },trailing: HStack{
-                    Button(action:{
-                       
-                        
-                    }, label:{
-                        Image(systemName: "trash")
-                            .foregroundColor(.white)
-                            .frame(width: 20,height: 20)
+                    if appImageSelected{
+                        Button(action:{
+                            if selectedPhotoArray[selectedTabIndex].allow_delete == 0{
+                                viewModel.showAlertForNoDelete()
+                            }
+                            else{
+                                viewModel.showAlertForDelete()
+                            }
+                            
+                        }, label:{
+                            Image(systemName: "trash")
+                                .foregroundColor(.white)
+                                .frame(width: 20,height: 20)
+                        }
+                               
+                        )
                     }
-                        
-                    )
                 })
-        } .navigationBarBackButtonHidden(true)
+        }
+        .actionSheet(isPresented: $viewModel.showActionSheet) {
+                ActionSheet(
+                    title: Text("Choose an action"),
+                    buttons: [
+                        .default(Text("Set As profile pic")) {
+                            viewModel.setProfilePic(imageDetail: selectedPhotoArray[selectedTabIndex])
+                        },
+                        .default(Text("Download")) {
+                            if let imageUrl = selectedPhotoArray[selectedTabIndex].thumb{
+                                viewModel.downloadAndSaveImage(imageLink: imageUrl )
+                            }
+                        },
+                        .cancel() // Add a cancel button
+                    ]
+                )
+            }
+        .onChange(of: viewModel.isDeleted) { _ in
+                
+            if viewModel.isDeleted{
+                reloadView = true
+                presentationMode.wrappedValue.dismiss()
+            }
+         
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+
+            switch alertItem.secondaryButton {
+                  case .some(let secondaryButton):
+                      // Present an alert with two buttons
+                      return Alert(
+                          title: alertItem.title,
+                          message: alertItem.message,
+                          primaryButton: .destructive(alertItem.primaryButton){
+                              if viewModel.alertType == .confirmdelete{
+                                  viewModel.deleteImage(imageDetail: selectedPhotoArray[selectedTabIndex])
+                              }
+                          },
+                          secondaryButton: .default(secondaryButton){
+                             
+                          }
+                      )
+                  case .none:
+                      // Present an alert with only the primary button
+                      return Alert(
+                          title: alertItem.title,
+                          message: alertItem.message,
+                          dismissButton: .default(alertItem.primaryButton){
+                              if viewModel.alertType == .invalidData || viewModel.alertType == .invalidResponse{
+                                  
+                              }
+                          }
+                      )
+                  }
+            
+            
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
-struct PhotoShowView_Previews: PreviewProvider {
-    static var previews: some View {
-        PhotoShowView()
-    }
-}

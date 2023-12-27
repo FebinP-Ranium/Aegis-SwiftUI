@@ -14,8 +14,8 @@
             filePath = "Aegis-living-SwiftUI/Screens/NotificationView/NotificationView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -23,47 +23,62 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5C727B3C-B95D-421A-BE2F-79131A35578C"
+            uuid = "643EC7E7-A3F3-4C97-8622-E749CF27E010"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotosView.swift"
+            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "5C727B3C-B95D-421A-BE2F-79131A35578C - 337bc1d76f56af8e"
+                  uuid = "643EC7E7-A3F3-4C97-8622-E749CF27E010 - 4d6eb0d6b363b159"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Aegis_living_SwiftUI.PhotosView_Previews.init() -&gt; Aegis_living_SwiftUI.PhotosView_Previews"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; Swift.Optional&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(leading: &#x3c4;_1_0, trailing: &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
                   moduleName = "Aegis-living-SwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosView.swift"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "0">
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "636">
                </Location>
                <Location
-                  uuid = "5C727B3C-B95D-421A-BE2F-79131A35578C - 33ce46473343e149"
+                  uuid = "643EC7E7-A3F3-4C97-8622-E749CF27E010 - 4d6eb0d6b363b1ba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in Aegis_living_SwiftUI.PhotosView.body.getter : some"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; Swift.Optional&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(leading: &#x3c4;_1_0, trailing: &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
                   moduleName = "Aegis-living-SwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosView.swift"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "84">
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  uuid = "643EC7E7-A3F3-4C97-8622-E749CF27E010 - 4d6eb0d6b363b1ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; Swift.Optional&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(leading: &#x3c4;_1_0, trailing: &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "564">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -71,17 +86,362 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "259FB344-086F-4986-AA4D-BF25CD0C3FFC"
+            uuid = "DFAB25F2-BD17-4F7D-BEB2-83925AB4A8D4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotosView.swift"
+            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DFAB25F2-BD17-4F7D-BEB2-83925AB4A8D4 - 4d6eb0d6b363b13e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; Swift.Optional&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(leading: &#x3c4;_1_0, trailing: &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "DFAB25F2-BD17-4F7D-BEB2-83925AB4A8D4 - 645205724b27e098"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in closure #3 () -&gt; Swift.Optional&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(leading: &#x3c4;_1_0, trailing: &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "DFAB25F2-BD17-4F7D-BEB2-83925AB4A8D4 - 4d6eb0d6b363b11f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #3 () -&gt; Swift.Optional&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(leading: &#x3c4;_1_0, trailing: &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "636">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE7D03EC-1A38-45DB-884D-5A9D85DF033D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "deleteImage(imageDetail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE7D03EC-1A38-45DB-884D-5A9D85DF033D - 67d20fb3251e053f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.PhotoListModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "CE7D03EC-1A38-45DB-884D-5A9D85DF033D - b236f2d92ab19e3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "700">
+               </Location>
+               <Location
+                  uuid = "CE7D03EC-1A38-45DB-884D-5A9D85DF033D - 67d20fb3251e051c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.PhotoListModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "CE7D03EC-1A38-45DB-884D-5A9D85DF033D - b236f2d92ab19e1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "700">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91EDC883-6C66-441F-A39A-25711B44CADB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "91EDC883-6C66-441F-A39A-25711B44CADB - 48a95479bd38bc53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "460">
+               </Location>
+               <Location
+                  uuid = "91EDC883-6C66-441F-A39A-25711B44CADB - 48a95479bd38bc53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "91EDC883-6C66-441F-A39A-25711B44CADB - 1d0d090604966a66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool) -&gt; () in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2837720-8D15-458A-9EF0-8D8174A7D5DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C2837720-8D15-458A-9EF0-8D8174A7D5DB - 55e0ca0603e16d8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Aegis_living_SwiftUI.AlertItem) -&gt; SwiftUI.Alert in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+               <Location
+                  uuid = "C2837720-8D15-458A-9EF0-8D8174A7D5DB - 44c53bdb4b02fd24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #3 (Aegis_living_SwiftUI.AlertItem) -&gt; SwiftUI.Alert in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "C2837720-8D15-458A-9EF0-8D8174A7D5DB - 44c53bdb4b02fb76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #4 (Aegis_living_SwiftUI.AlertItem) -&gt; SwiftUI.Alert in Aegis_living_SwiftUI.PhotoShowView.body.getter : some"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotoShowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36C4B900-5A15-4823-BA28-D65237F6F831"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "deleteImage(imageDetail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "36C4B900-5A15-4823-BA28-D65237F6F831 - 67d20fb3251e05f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.PhotoListModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "36C4B900-5A15-4823-BA28-D65237F6F831 - 67d20fb3251e05f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.PhotoListModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "36C4B900-5A15-4823-BA28-D65237F6F831 - 67d20fb3251e05f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.PhotoListModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "36C4B900-5A15-4823-BA28-D65237F6F831 - 67d20fb3251e0590"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.PhotoListModel&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.PhotosViewModel.deleteImage(imageDetail: Aegis_living_SwiftUI.ResidentImage) -&gt; ()"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/PhotosView/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CD79D45-6DFB-4200-BC7F-4D203354A1D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/SupportFiles/UserDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "setProfilePic(imageLink:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

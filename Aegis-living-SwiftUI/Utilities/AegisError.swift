@@ -12,3 +12,12 @@ enum AGError:Error{
     case invalidData
     case unableToComplete
 }
+enum AlertType{
+    case invalidURL
+    case invalidResponse
+    case invalidData
+    case unableToComplete
+    case confirmdelete
+    case noDelete
+    case setProfilePic
+}

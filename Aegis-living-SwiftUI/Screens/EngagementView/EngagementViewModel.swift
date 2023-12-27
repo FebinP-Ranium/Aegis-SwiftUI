@@ -12,6 +12,8 @@ final class EngagementViewModel:ObservableObject{
     @Published var alertItem:AlertItem?
     @Published var videoList = [String: [VideoData]]()
     @Published var videoType = [String]()
+    @Published var alertType:AlertType?
+
     func getVideoList(){
         self.isLoading = true
         
@@ -36,15 +38,16 @@ final class EngagementViewModel:ObservableObject{
                 switch error{
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
-                    
+                    self.alertType = .invalidURL
                 case .invalidResponse:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
+                    self.alertType = .unableToComplete
                 }
             }
             

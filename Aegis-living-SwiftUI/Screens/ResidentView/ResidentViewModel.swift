@@ -13,6 +13,8 @@ final class ResidentViewModel:ObservableObject{
     @Published var alertItem:AlertItem?
     @Published var categoryName:CategoryName?
     @Published var isActiveCategory = false
+    @Published var alertType:AlertType?
+
     let userManager = UserDataManager()
 
     
@@ -33,15 +35,16 @@ final class ResidentViewModel:ObservableObject{
                 switch error{
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
-                    
+                    self.alertType = .invalidURL
                 case .invalidResponse:
                     self.alertItem = AlertContext.invalidData
-                    
+                    self.alertType = .invalidData
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
+                    self.alertType = .unableToComplete
                 }
             }
             

@@ -35,7 +35,7 @@ struct PhotosView: View {
                                     if let imageUrl = viewModel.webPhotoArray[index].thumb{
                                         
                                         
-                                        NavigationLink(destination: PhotoShowView(viewModel: viewModel,selectedPhotoArray:viewModel.webPhotoArray)) {
+                                        NavigationLink(destination: PhotoShowView(selectedTabIndex: index,reloadView: $viewModel.reloadView, selectedPhotoArray:viewModel.webPhotoArray)) {
                                             PhotoGridView(imageUrl:imageUrl, showDeleteImage: false)
                                                 
                                         }
@@ -67,8 +67,8 @@ struct PhotosView: View {
                             LazyVGrid(columns: columns, spacing: 10) {
                                 ForEach(0..<viewModel.appPhotoArray.count, id: \.self)  { index in // Change the range according to your data
                                     if let imageUrl = viewModel.appPhotoArray[index].thumb{
-                                        NavigationLink(destination: PhotoShowView(viewModel: viewModel,selectedPhotoArray:viewModel.appPhotoArray)) {
-                                            PhotoGridView(imageUrl:imageUrl, showDeleteImage: false)
+                                        NavigationLink(destination: PhotoShowView(selectedTabIndex: index, reloadView: $viewModel.reloadView, selectedPhotoArray:viewModel.appPhotoArray,appImageSelected:true)) {
+                                            PhotoGridView(imageUrl:imageUrl, showDeleteImage: true)
                                                 
                                         }
                                            
@@ -107,6 +107,8 @@ struct PhotosView: View {
                               Text("App Gallery")
                                   .font(Font.custom("Avenir Heavy", size: 20.0))
                           }
+                
+                
                       
                       // Add more tabs as needed
                   }
@@ -132,7 +134,7 @@ struct PhotosView: View {
                         ]
                     )
                 }
-            .accentColor(Color.textPrimaryColor)
+                .accentColor(Color.textPrimaryColor)
                 .navigationBarTitle(Text(""), displayMode: .inline)
                 .navigationBarItems(leading: HStack{
                     
@@ -142,7 +144,7 @@ struct PhotosView: View {
                     }, label:{
                         CustomBackButtonView()
                     }
-                    )
+                    ).frame(width:50,height: 50)
                     
                     CustomNavigationBar()
                     
@@ -159,18 +161,41 @@ struct PhotosView: View {
                        viewModel.saveImage()
                    }
                }
+        .onChange(of: viewModel.reloadView) { _ in
+            if viewModel.reloadView == true{
+                viewModel.reloadView = false
+                viewModel.getResidentImageGallery()
+                viewModel.isDeleted = false
+            }
+               }
         .onAppear{
+          
             viewModel.getResidentImageGallery()
            
            
         }
         .alert(item: $viewModel.alertItem) { alertItem in
-            Alert(
-                title: alertItem.title,
-                message: alertItem.message,
-                dismissButton: .default(alertItem.dismissButtonText){
-                }
-            )
+            switch alertItem.secondaryButton {
+                  case .some(let secondaryButton):
+                      // Present an alert with two buttons
+                      return Alert(
+                          title: alertItem.title,
+                          message: alertItem.message,
+                          primaryButton: .default(alertItem.primaryButton),
+                          secondaryButton: .destructive(secondaryButton)
+                      )
+                  case .none:
+                      // Present an alert with only the primary button
+                      return Alert(
+                          title: alertItem.title,
+                          message: alertItem.message,
+                          dismissButton: .default(alertItem.primaryButton){
+                              if viewModel.alertType == .invalidData || viewModel.alertType == .invalidResponse{
+                                  
+                              }
+                          }
+                      )
+                  }
         }
         .navigationBarBackButtonHidden(true)
     }

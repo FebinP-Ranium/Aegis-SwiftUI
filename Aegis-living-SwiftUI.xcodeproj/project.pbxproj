@@ -148,13 +148,6 @@
 			path = EngagementView;
 			sourceTree = "<group>";
 		};
-		0D368B302B3460E000A29209 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		0D6B39182B31510400F612FF /* EventsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +226,6 @@
 		0D9BA9F92B2AC33E001D5AFA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				0D368B302B3460E000A29209 /* New Group */,
 				0D368B212B33F29100A29209 /* EngagementView */,
 				0D368B142B330D1600A29209 /* NotificationView */,
 				0D6B39212B315A1B00F612FF /* PhotosView */,
@@ -615,6 +607,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Aegis-living-SwiftUI/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use the camera for capturing images for resident gallery";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to save photo in your library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can select photos to attach to reports";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Upload photos for gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -647,6 +643,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Aegis-living-SwiftUI/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use the camera for capturing images for resident gallery";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to save photo in your library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can select photos to attach to reports";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Upload photos for gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

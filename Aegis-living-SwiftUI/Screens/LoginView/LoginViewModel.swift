@@ -13,6 +13,8 @@ final class LoginViewModel:ObservableObject{
     @Published var alertItem:AlertItem?
     @Published var isLoading = false
     @Published var rootpresentng:Bool = false
+    @Published var alertType:AlertType?
+
 
     let userManager = UserDataManager()
     func loginUser() {
@@ -38,16 +40,17 @@ final class LoginViewModel:ObservableObject{
             case .failure(let error):
                 switch error{
                 case .invalidData:
-                    self.alertItem = AlertContext.invalidCredentials
-                    
+                    self.alertItem = AlertContext.invalidData
+                    self.alertType = .invalidData
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
-                    
+                    self.alertType = .invalidURL
                 case .invalidResponse:
-                    self.alertItem = AlertContext.unSuccesfulLogin
-                    
+                    self.alertItem = AlertContext.invalidData
+                    self.alertType = .invalidData
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
+                    self.alertType = .unableToComplete
                 }
             }
             

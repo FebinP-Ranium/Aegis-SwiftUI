@@ -9,9 +9,24 @@ import Foundation
 import SwiftUI
 struct AlertItem:Identifiable{
     let id = UUID()
-    let title:Text
-    let message:Text
-    let dismissButtonText:Text
+       let title: Text
+       let message: Text
+       let primaryButton: Text // Primary button
+       let secondaryButton: Text? // Optional secondary button
+    
+      init(title: Text, message: Text, dismissButtonText: Text) {
+            self.title = title
+            self.message = message
+            self.primaryButton = dismissButtonText
+            self.secondaryButton = nil
+        }
+
+        init(title: Text, message: Text, primaryButton: Text, secondaryButton: Text) {
+            self.title = title
+            self.message = message
+            self.primaryButton = primaryButton
+            self.secondaryButton = secondaryButton
+        }
 }
 struct AlertContext{
     /// ////////////////////////////////////////////////////////////////////////////////////////
@@ -59,6 +74,17 @@ struct AlertContext{
     
     static let imageSuccessFullAlert = AlertItem(title: Text("Image Upload"),
                                             message: Text("Image successfully uploaded. It may take a moment to process."),
+                                           dismissButtonText: Text("OK"))
+    static let noDeleteAlert = AlertItem(title: Text("Delete Alert"),
+                                            message: Text("This photo cannot be deleted."),
+                                           dismissButtonText: Text("OK"))
+    static let deleteConfirmationAlert =  AlertItem(title: Text("Delete Alert"),
+                                              message: Text("Are you sure you want to delete the photo?"),
+                                              primaryButton: Text("Delete"),
+                                              secondaryButton: Text("Cancel"))
+    
+    static let setprofilePicAlert = AlertItem(title: Text("Image Upload"),
+                                            message: Text("Profile picture uploaded successfully"),
                                            dismissButtonText: Text("OK"))
 }
 

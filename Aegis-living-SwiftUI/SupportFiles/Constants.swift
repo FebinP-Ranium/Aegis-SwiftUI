@@ -36,6 +36,8 @@ class Constants {
     static let ENGAGEMENTVIDEO = "familylink/v1/engagement-videos"
     static let GALLERY = "familylink/v1/residents/gallery"
     static let UPLOAD = "familylink/v1/family-upload"
+    static let DELETEPHOTO = "familylink/v1/resident-photo/delete"
+    static let UPLOADPROFILEPIC = "familylink/v1/residents/set-profile"
 
    
     //====================================
