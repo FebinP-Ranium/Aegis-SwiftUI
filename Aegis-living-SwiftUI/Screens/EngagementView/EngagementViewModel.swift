@@ -10,9 +10,10 @@ final class EngagementViewModel:ObservableObject{
     let userManager = UserDataManager()
     @Published var isLoading = false
     @Published var alertItem:AlertItem?
+    @Published var alertType:AlertType?
+
     @Published var videoList = [String: [VideoData]]()
     @Published var videoType = [String]()
-    @Published var alertType:AlertType?
 
     func getVideoList(){
         self.isLoading = true

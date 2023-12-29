@@ -64,7 +64,7 @@ final class ResidentViewModel:ObservableObject{
             case .photos:
                 PhotosView()
             case .lifeStory:
-                EventView()
+               LifeStoryView()
             case .attendeance:
                 EventView()
             case .engagement:

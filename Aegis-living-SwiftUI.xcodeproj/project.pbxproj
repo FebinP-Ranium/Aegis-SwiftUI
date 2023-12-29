@@ -25,6 +25,10 @@
 		0D368B382B356B5100A29209 /* PhotoShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B372B356B5100A29209 /* PhotoShowView.swift */; };
 		0D368B3C2B3AD70900A29209 /* ImageSourcePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B3B2B3AD70900A29209 /* ImageSourcePicker.swift */; };
 		0D368B3E2B3AD97400A29209 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B3D2B3AD97400A29209 /* ImagePicker.swift */; };
+		0D368B412B3D2EDA00A29209 /* LifeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B402B3D2EDA00A29209 /* LifeStoryView.swift */; };
+		0D368B432B3D2EEF00A29209 /* LifestoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B422B3D2EEF00A29209 /* LifestoryViewModel.swift */; };
+		0D368B452B3D2EFE00A29209 /* LifeStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B442B3D2EFE00A29209 /* LifeStoryModel.swift */; };
+		0D368B472B3D530600A29209 /* CustomSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D368B462B3D530600A29209 /* CustomSaveButton.swift */; };
 		0D6B39122B2C2B4B00F612FF /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */; };
 		0D6B39142B2C331700F612FF /* ResidentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39132B2C331700F612FF /* ResidentViewModel.swift */; };
 		0D6B39162B2C332500F612FF /* ResidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B39152B2C332500F612FF /* ResidentModel.swift */; };
@@ -77,6 +81,10 @@
 		0D368B372B356B5100A29209 /* PhotoShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShowView.swift; sourceTree = "<group>"; };
 		0D368B3B2B3AD70900A29209 /* ImageSourcePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourcePicker.swift; sourceTree = "<group>"; };
 		0D368B3D2B3AD97400A29209 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0D368B402B3D2EDA00A29209 /* LifeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStoryView.swift; sourceTree = "<group>"; };
+		0D368B422B3D2EEF00A29209 /* LifestoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifestoryViewModel.swift; sourceTree = "<group>"; };
+		0D368B442B3D2EFE00A29209 /* LifeStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStoryModel.swift; sourceTree = "<group>"; };
+		0D368B462B3D530600A29209 /* CustomSaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSaveButton.swift; sourceTree = "<group>"; };
 		0D6B39112B2C2B4B00F612FF /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
 		0D6B39132B2C331700F612FF /* ResidentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentViewModel.swift; sourceTree = "<group>"; };
 		0D6B39152B2C332500F612FF /* ResidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentModel.swift; sourceTree = "<group>"; };
@@ -146,6 +154,16 @@
 				0D368B2E2B3414B700A29209 /* VideoPlayerView.swift */,
 			);
 			path = EngagementView;
+			sourceTree = "<group>";
+		};
+		0D368B3F2B3D2EBB00A29209 /* LifeStoryView */ = {
+			isa = PBXGroup;
+			children = (
+				0D368B402B3D2EDA00A29209 /* LifeStoryView.swift */,
+				0D368B422B3D2EEF00A29209 /* LifestoryViewModel.swift */,
+				0D368B442B3D2EFE00A29209 /* LifeStoryModel.swift */,
+			);
+			path = LifeStoryView;
 			sourceTree = "<group>";
 		};
 		0D6B39182B31510400F612FF /* EventsView */ = {
@@ -226,6 +244,7 @@
 		0D9BA9F92B2AC33E001D5AFA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0D368B3F2B3D2EBB00A29209 /* LifeStoryView */,
 				0D368B212B33F29100A29209 /* EngagementView */,
 				0D368B142B330D1600A29209 /* NotificationView */,
 				0D6B39212B315A1B00F612FF /* PhotosView */,
@@ -293,6 +312,7 @@
 				0D368B242B33F35400A29209 /* EngagementGridView.swift */,
 				0D368B2C2B3408FC00A29209 /* VideoListTablecell.swift */,
 				0D368B352B353C0A00A29209 /* PhotoGridView.swift */,
+				0D368B462B3D530600A29209 /* CustomSaveButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +451,7 @@
 			files = (
 				0D368B232B33F2AD00A29209 /* EngangementView.swift in Sources */,
 				0D368B382B356B5100A29209 /* PhotoShowView.swift in Sources */,
+				0D368B472B3D530600A29209 /* CustomSaveButton.swift in Sources */,
 				0D6B39142B2C331700F612FF /* ResidentViewModel.swift in Sources */,
 				0D9BA9F52B2ABEB4001D5AFA /* String+Ext.swift in Sources */,
 				0D9BAA062B2ACAF1001D5AFA /* ResidentView.swift in Sources */,
@@ -459,14 +480,17 @@
 				0D368B362B353C0A00A29209 /* PhotoGridView.swift in Sources */,
 				0D368B2D2B3408FC00A29209 /* VideoListTablecell.swift in Sources */,
 				0D9BAA0D2B2ADA3E001D5AFA /* FailModel.swift in Sources */,
+				0D368B412B3D2EDA00A29209 /* LifeStoryView.swift in Sources */,
 				0D6B39292B31BE7800F612FF /* EventTableCellView.swift in Sources */,
 				0D368B1A2B330E8C00A29209 /* NotificationModel.swift in Sources */,
+				0D368B452B3D2EFE00A29209 /* LifeStoryModel.swift in Sources */,
 				0D368B3C2B3AD70900A29209 /* ImageSourcePicker.swift in Sources */,
 				0D9BAA162B2B0D06001D5AFA /* RemoteImage.swift in Sources */,
 				0D9BA9FC2B2AC369001D5AFA /* LoginViewModel.swift in Sources */,
 				0D9BA9E52B29DE34001D5AFA /* Aegis_living_SwiftUIApp.swift in Sources */,
 				0D9BAA092B2ACB73001D5AFA /* Alert.swift in Sources */,
 				0D6B391E2B31522100F612FF /* EventModel.swift in Sources */,
+				0D368B432B3D2EEF00A29209 /* LifestoryViewModel.swift in Sources */,
 				0D368B162B330E5500A29209 /* NotificationView.swift in Sources */,
 				0D9BAA032B2AC563001D5AFA /* Constants.swift in Sources */,
 				0D368B1E2B3311F100A29209 /* CustomTitleView.swift in Sources */,
