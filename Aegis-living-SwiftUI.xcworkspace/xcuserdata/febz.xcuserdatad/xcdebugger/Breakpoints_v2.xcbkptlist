@@ -474,53 +474,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "192A1895-471E-4333-B375-A5483CF8AD36"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aegis-living-SwiftUI/Screens/LifeStoryView/LifestoryViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "saveLiveStoryData(type:value:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "192A1895-471E-4333-B375-A5483CF8AD36 - 6f3ede5acd2090be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.LiveStoryResponse&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.LifeStoryViewModel.saveLiveStoryData(type: Swift.String, value: Any) -&gt; ()"
-                  moduleName = "Aegis-living-SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/LifeStoryView/LifestoryViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "2500">
-               </Location>
-               <Location
-                  uuid = "192A1895-471E-4333-B375-A5483CF8AD36 - 6f3ede5acd2090be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Aegis_living_SwiftUI.LiveStoryResponse&gt;, Aegis_living_SwiftUI.AGError&gt;) -&gt; () in Aegis_living_SwiftUI.LifeStoryViewModel.saveLiveStoryData(type: Swift.String, value: Any) -&gt; ()"
-                  moduleName = "Aegis-living-SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Screens/LifeStoryView/LifestoryViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "2484">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

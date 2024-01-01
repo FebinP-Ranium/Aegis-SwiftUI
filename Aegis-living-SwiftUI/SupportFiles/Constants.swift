@@ -40,6 +40,7 @@ class Constants {
     static let UPLOADPROFILEPIC = "familylink/v1/residents/set-profile"
     static let LIFESTORY = "familylink/v1/residents/life-story"
     static let SAVELIFESTORY = "familylink/v1/life-story/save"
+    static let MEMOIRDATASAVE = "familylink/v1/memoirs/save"
 
    
     //====================================
@@ -55,6 +56,8 @@ class Constants {
     static let LIMIT = 10
     static let TIMERLIMIT = 30
     static let DEVICETYPE = "iOS"
+    static let MEMOIRTYPE = "MEMOIR"
+    static let RESIDENTTYPE = "RESIDENTMEMOIR"
   
     
     
