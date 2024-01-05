@@ -109,7 +109,31 @@ struct LifeStoryView: View {
                      CustomNavigationBar()
                 
                 })
-        }.navigationBarBackButtonHidden(true)
+        }.alert(item: $viewModel.alertItem) { alertItem in
+            
+            switch alertItem.secondaryButton {
+                  case .some(let secondaryButton):
+                      // Present an alert with two buttons
+                      return Alert(
+                          title: alertItem.title,
+                          message: alertItem.message,
+                          primaryButton: .default(alertItem.primaryButton),
+                          secondaryButton: .destructive(alertItem.secondaryButton ?? Text("Delete"))
+                      )
+                  case .none:
+                      // Present an alert with only the primary button
+                      return Alert(
+                          title: alertItem.title,
+                          message: alertItem.message,
+                          dismissButton: .default(alertItem.primaryButton){
+                              if viewModel.alertType == .invalidData || viewModel.alertType == .invalidResponse{
+                                  
+                              }
+                          }
+                      )
+                  }
+        }
+        .navigationBarBackButtonHidden(true)
             .onAppear{
                 viewModel.getLiveStoryData()
             }

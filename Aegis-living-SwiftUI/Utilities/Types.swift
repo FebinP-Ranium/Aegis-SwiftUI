@@ -14,6 +14,9 @@ enum AlertType{
     case confirmdelete
     case noDelete
     case setProfilePic
+    case passwordSuccess
+    case passwordMisMatch
+    case passwordUnsuccessful
 }
 enum MemoirType{
     case memoirAnswer

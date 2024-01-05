@@ -42,6 +42,7 @@ class Constants {
     static let SAVELIFESTORY = "familylink/v1/life-story/save"
     static let MEMOIRDATASAVE = "familylink/v1/memoirs/save"
     static let ATTENDENCE = "familylink/v1/residents/attendance"
+    static let CHANGEPSWD = "familylink/v1/update-password"
 
    
     //====================================

@@ -24,7 +24,14 @@ struct ResidentView: View {
                             PartnerView(viewModel: viewModel)
                         }
                         
-                        UserView(viewModel: viewModel)
+                        NavigationLink {
+                            // destination view to navigation to
+                            ProfileView()
+                        } label: {
+                            UserView(viewModel: viewModel)
+                        }
+                        
+                       
                         
                         CategoryButtonsView(viewModel: viewModel)
                        
@@ -131,22 +138,24 @@ struct UserView: View {
     @ObservedObject var viewModel: ResidentViewModel
 
     var body: some View {
-        WebImageView(url: URL(string:viewModel.userManager.image))
-            .frame(width: 130, height: 130)
-            .cornerRadius(65)
-
-        Text(viewModel.userManager.residentFullName)
-            .font(Font.custom("Avenir Roman", size: 26.0))
-            .fontWeight(.semibold)
-            .foregroundColor(.textPrimaryColor)
-
-        Text(viewModel.userManager.communityName.capitalizingFirstLetter())
-            .font(Font.custom("Avenir Roman", size: 17.0))
-            .foregroundColor(.textPrimaryColor)
-
-        Text("Apt #\(viewModel.userManager.room)".capitalizingFirstLetter())
-            .font(Font.custom("Avenir Roman", size: 17.0))
-            .foregroundColor(.textPrimaryColor)
+        VStack{
+            WebImageView(url: URL(string:viewModel.userManager.image))
+                .frame(width: 130, height: 130)
+                .cornerRadius(65)
+            
+            Text(viewModel.userManager.residentFullName)
+                .font(Font.custom("Avenir Roman", size: 26.0))
+                .fontWeight(.semibold)
+                .foregroundColor(.textPrimaryColor)
+            
+            Text(viewModel.userManager.communityName.capitalizingFirstLetter())
+                .font(Font.custom("Avenir Roman", size: 17.0))
+                .foregroundColor(.textPrimaryColor)
+            
+            Text("Apt #\(viewModel.userManager.room)".capitalizingFirstLetter())
+                .font(Font.custom("Avenir Roman", size: 17.0))
+                .foregroundColor(.textPrimaryColor)
+        }
     }
 }
 

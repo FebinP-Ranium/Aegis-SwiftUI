@@ -86,5 +86,22 @@ struct AlertContext{
     static let setprofilePicAlert = AlertItem(title: Text("Image Upload"),
                                             message: Text("Profile picture uploaded successfully"),
                                            dismissButtonText: Text("OK"))
+    
+    
+    
+    /// ////////////////////////////////////////////////////////////////////////////////////////
+    // MARK: - Change Password
+    /// ////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    static let changePasswordSuccess = AlertItem(title: Text("Change Password Alert"),
+                                            message: Text("Password has been changed successfully."),
+                                           dismissButtonText: Text("OK"))
+    static let changePasswordMisMatch = AlertItem(title: Text("Change Password Alert"),
+                                            message: Text("Passwords does not match"),
+                                           dismissButtonText: Text("OK"))
+    static let changePasswordNotSuccess = AlertItem(title: Text("Change Password Alert"),
+                                            message: Text("Password not changed."),
+                                           dismissButtonText: Text("OK"))
 }
 
