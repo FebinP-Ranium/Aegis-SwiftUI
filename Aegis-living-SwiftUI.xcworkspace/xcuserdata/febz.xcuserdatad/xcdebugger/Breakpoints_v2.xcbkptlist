@@ -474,5 +474,131 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "298539D4-9F40-4142-AB4A-AAA18A32080B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Views/StackBarView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "chartValueSelected(_:entry:highlight:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "293FE58C-260E-4C04-9CE3-3CB7D4593F47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Views/StackBarView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "Coordinator"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "293FE58C-260E-4C04-9CE3-3CB7D4593F47 - 1e1ce36a48340162"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aegis_living_SwiftUI.StackedBarChart.Coordinator.parent.getter : Aegis_living_SwiftUI.StackedBarChart"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Views/StackBarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "293FE58C-260E-4C04-9CE3-3CB7D4593F47 - 967f2e692784afee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aegis_living_SwiftUI.StackedBarChart.Coordinator.parent.setter : Aegis_living_SwiftUI.StackedBarChart"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Views/StackBarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "293FE58C-260E-4C04-9CE3-3CB7D4593F47 - 63aaf5015d6554ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aegis_living_SwiftUI.StackedBarChart.Coordinator.parent.modify : Aegis_living_SwiftUI.StackedBarChart"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Views/StackBarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "293FE58C-260E-4C04-9CE3-3CB7D4593F47 - c60b6ec5e125c223"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aegis_living_SwiftUI.StackedBarChart.Coordinator.parent.modify : Aegis_living_SwiftUI.StackedBarChart with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Aegis-living-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/febz/Documents/Ranium%20Projects/Aegis-SwiftUI/Aegis-living-SwiftUI/Views/StackBarView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E291307-1402-43BC-A1F3-525B3B3054DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Views/StackBarView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "makeCoordinator()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7583BC6-79C2-4043-BAC9-B4821AB3F4B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aegis-living-SwiftUI/Views/StackBarView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

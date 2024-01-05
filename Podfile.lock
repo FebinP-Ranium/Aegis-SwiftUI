@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.8.1)
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
   - Introspect (0.1.4)
   - SDWebImage (5.18.5):
     - SDWebImage/Core (= 5.18.5)
@@ -12,6 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DGCharts
   - SDWebImageSwiftUI
   - SwiftUIRefresh
   - SwiftyJSON
@@ -19,6 +23,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - DGCharts
     - Introspect
     - SDWebImage
     - SDWebImageSwiftUI
@@ -27,12 +32,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
   Introspect: b62c4dd2063072327c21d618ef2bedc3c87bc366
   SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
   SDWebImageSwiftUI: 3a8448b76833ed0e954a651be6c6f45faceed29d
   SwiftUIRefresh: ca6ae2718d25aad5dd68bbf5d2ae36ef6ade98bf
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: feca41e5b07fc58a2e76b053a93c60417ca5a95a
+PODFILE CHECKSUM: 7b828cef9acadde5425e539f115cf524c5b9db78
 
 COCOAPODS: 1.11.3

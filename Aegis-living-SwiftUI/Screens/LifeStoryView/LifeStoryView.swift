@@ -178,20 +178,7 @@ struct TopThingView:View{
                                     }
 
                                 }
-                            
-//                            TextField(topThingArray[index].placeholder ?? "", text: $viewModel.textValue[index])
-//                                .padding()
-//                                .onAppear {
-//                                    if let stringValue = topThingArray[index].value?.stringValue() {
-//                                        viewModel.textValue[index] = stringValue
-//                                    } else if let intValue = topThingArray[index].value?.intValue() {
-//                                        viewModel.textValue[index] = "\(intValue)"
-//                                    }
-//                                    else{
-//                                        viewModel.textValue[index] = ""
-//                                    }
-//
-//                                }
+
                             Rectangle()
                                 .foregroundColor(Color.lightGreySeperator)
                                 .frame(height: 0.5)
