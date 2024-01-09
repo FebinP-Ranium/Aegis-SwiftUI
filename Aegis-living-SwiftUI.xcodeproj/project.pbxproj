@@ -69,6 +69,7 @@
 		0DB64DA52B47B8FC00B8E130 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB64DA42B47B8FB00B8E130 /* ProfileView.swift */; };
 		0DB64DA72B47BC7C00B8E130 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB64DA62B47BC7C00B8E130 /* ProfileViewModel.swift */; };
 		0DB64DA92B47BC9400B8E130 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB64DA82B47BC9400B8E130 /* ProfileModel.swift */; };
+		0DB64DAB2B4CFF0900B8E130 /* LegendGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB64DAA2B4CFF0900B8E130 /* LegendGridView.swift */; };
 		DA2F66F98C8895D79E43B7D7 /* Pods_Aegis_living_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99813EF52E8DA2B2498BFBD5 /* Pods_Aegis_living_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,7 @@
 		0DB64DA42B47B8FB00B8E130 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0DB64DA62B47BC7C00B8E130 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		0DB64DA82B47BC9400B8E130 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		0DB64DAA2B4CFF0900B8E130 /* LegendGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendGridView.swift; sourceTree = "<group>"; };
 		48C940189C15E570A36878D7 /* Pods-Aegis-living-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aegis-living-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		4EEC9A0873D46D8DE486F8B2 /* Pods-Aegis-living-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aegis-living-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Aegis-living-SwiftUI/Pods-Aegis-living-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		99813EF52E8DA2B2498BFBD5 /* Pods_Aegis_living_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aegis_living_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +341,7 @@
 				0D368B462B3D530600A29209 /* CustomSaveButton.swift */,
 				0DB64D9B2B46911A00B8E130 /* StackBarView.swift */,
 				0DB64D9D2B46961E00B8E130 /* PieChartView.swift */,
+				0DB64DAA2B4CFF0900B8E130 /* LegendGridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				0DA2DB352B43F14800B04841 /* AttendenceModel.swift in Sources */,
 				0D368B1A2B330E8C00A29209 /* NotificationModel.swift in Sources */,
 				0D368B452B3D2EFE00A29209 /* LifeStoryModel.swift in Sources */,
+				0DB64DAB2B4CFF0900B8E130 /* LegendGridView.swift in Sources */,
 				0D368B3C2B3AD70900A29209 /* ImageSourcePicker.swift in Sources */,
 				0D9BAA162B2B0D06001D5AFA /* RemoteImage.swift in Sources */,
 				0D9BA9FC2B2AC369001D5AFA /* LoginViewModel.swift in Sources */,

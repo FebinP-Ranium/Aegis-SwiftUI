@@ -9,6 +9,8 @@ import SwiftUI
 import DGCharts
 struct StackedBarChart: UIViewRepresentable {
     @ObservedObject var viewModel: AttendenceViewModel
+    let barChartView = BarChartView()
+
     func makeUIView(context: Context) -> BarChartView {
         lazy var formatter: NumberFormatter = {
             let formatter = NumberFormatter()
@@ -16,7 +18,6 @@ struct StackedBarChart: UIViewRepresentable {
             formatter.maximumFractionDigits = 1
             return formatter
         }()
-        let barChartView = BarChartView()
         let leftAxis = barChartView.leftAxis
         leftAxis.valueFormatter = DefaultAxisValueFormatter(formatter: formatter)
         leftAxis.axisMinimum = 0
@@ -36,11 +37,11 @@ struct StackedBarChart: UIViewRepresentable {
         barChartView.chartDescription.enabled = true
         updateUIView(barChartView, context: context)
         let coordinator = self.makeCoordinator()
-        coordinator.chartView = barChartView
-        coordinator.timePeriod = viewModel.timePeriod
-        coordinator.attendenceDetail = viewModel.attendenceDetail
-        coordinator.attendanceStatusCount = viewModel.attendanceStatusCount
-        barChartView.delegate = coordinator
+        context.coordinator.chartView = barChartView
+        context.coordinator.timePeriod = viewModel.timePeriod
+        context.coordinator.attendenceDetail = viewModel.attendenceDetail
+        context.coordinator.attendanceStatusCount = viewModel.attendanceStatusCount
+        barChartView.delegate = context.coordinator
 
         return barChartView
     }
@@ -106,11 +107,18 @@ struct StackedBarChart: UIViewRepresentable {
            init(_ parent: StackedBarChart) {
                self.parent = parent
            }
+//        func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+//            // Implement your logic when a value is selected here
+//            print("Selected value: \(entry)")
+//
+//
+//        }
+ 
 
            func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
                // Implement your logic when a value is selected here
                print("Selected value: \(entry)")
-               
+
                guard let barEntry = entry as? BarChartDataEntry else { return }
 
                let stackIndex = highlight.stackIndex
@@ -136,7 +144,7 @@ struct StackedBarChart: UIViewRepresentable {
                    chartView.marker = marker as? Marker
                } else {
                    let stringBarValue = (intValue < 10) ? String(format: "%02d", intValue) : String(intValue)
-
+                    print(attendanceStatusCount)
                    guard let index = attendanceStatusCount?.firstIndex(where: {
                        let dateFormatter = DateFormatter()
                        dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -159,12 +167,12 @@ struct StackedBarChart: UIViewRepresentable {
                    marker.text = getJoinedString(dataForText: innerArray)
                    chartView.marker = marker as? Marker
                }
-               
-               
-               
-               
+
+
+
+
            }
-        
+
         func getJoinedString(dataForText: [Any]) -> String {
             var joinedString = ""
 

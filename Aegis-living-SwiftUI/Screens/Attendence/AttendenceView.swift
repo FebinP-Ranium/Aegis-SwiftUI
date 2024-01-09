@@ -40,10 +40,12 @@ struct AttendenceView: View {
                                             PieChartUIView(dataPoints: viewModel.pieChartLabel, values: viewModel.pieChartValues)
                                                 .frame(height: 300) // Adjust the height as needed
                                             
+                                            LegendView().padding()
+                                            
                                             StackedBarChart(viewModel: viewModel)
                                                 .frame(height: 300) // Adjust the height as needed
                                         }
-                                        .padding()
+                                        
                             }.padding()
                             
                             LazyVStack {
@@ -60,6 +62,28 @@ struct AttendenceView: View {
                             }.padding()
                                
                             
+                        }
+                        else if (!viewModel.isLoading){
+                            ZStack {
+                                Color.white.ignoresSafeArea()
+                                VStack{
+                                    Text("No data available")
+                                        .font(Font.custom("Avenir-Medium", size: 15.0))
+                                        .foregroundColor(.black)
+                                        .frame(height: 300)
+                                       
+                                    Text("No chart data available")
+                                        .font(Font.custom("Avenir-Medium", size: 15.0))
+                                        .foregroundColor(.black)
+                                        .frame(height: 300)
+                                }.padding()
+                                    
+                            }.padding()
+                            
+                            Text("Events not found for this date")
+                                .font(Font.custom("Avenir-Medium", size: 15.0))
+                                .foregroundColor(.black)
+                               
                         }
                         Spacer()
                     }
@@ -147,7 +171,35 @@ struct AttendanceHeaderView:View{
             .cornerRadius(10, corners: [.topLeft,.topRight])
     }
 }
+struct LegendView: View {
+    var chartColors: [UIColor] = [ UIColor(displayP3Red: 0/255, green: 102/255, blue: 161/255, alpha: 1),UIColor(displayP3Red: 134/255, green: 196/255, blue: 73/255, alpha: 1), UIColor(displayP3Red: 89/255, green: 89/255, blue: 91/255, alpha: 1),UIColor(displayP3Red: 211/255, green: 211/255, blue: 211/255, alpha: 1),UIColor(displayP3Red: 255/255, green: 163/255, blue: 45/255, alpha: 1),UIColor(displayP3Red: 253/255, green: 253/255, blue: 2/255, alpha: 1)]
 
+    let legendTitle = ["PASSIVE","ACTIVE","SLEEPING","DECLINED TO PARTICIPATE","INTERMITTENT","UNAVAILABLE"]
+    let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+        ] // Define the number of columns and their behavior
+    var body: some View {
+        HStack{
+            Text("Engagement Level")
+                .multilineTextAlignment(.leading)
+                .font(.system(size: 17.0))
+                .foregroundColor(.black)
+            Spacer()
+        }
+        
+            LazyVGrid(columns: columns,alignment: .leading, spacing: 10) {
+                ForEach(0..<legendTitle.count, id: \.self)  { index in // Change the range according to your data
+                   
+                    LegendGridView(color: chartColors[index], title: legendTitle[index])
+                }
+          
+            }
+            
+        
+    }
+}
 struct AttendenceView_Previews: PreviewProvider {
     static var previews: some View {
         AttendenceView()
