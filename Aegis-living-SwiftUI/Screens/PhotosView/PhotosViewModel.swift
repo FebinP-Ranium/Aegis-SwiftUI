@@ -56,6 +56,9 @@ final class PhotosViewModel:ObservableObject{
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
                     self.alertType = .unableToComplete
+                case .invalidCredentials:
+                    self.alertItem = AlertContext.invalidCredentials
+                    self.alertType = .invalidCredentials
                 }
             }
             
@@ -97,6 +100,9 @@ final class PhotosViewModel:ObservableObject{
                     case .invalidResponse:
                         self.alertItem = AlertContext.invalidData
                         self.alertType = .invalidData
+                    case .invalidCredentials:
+                        self.alertItem = AlertContext.invalidCredentials
+                        self.alertType = .invalidCredentials
                     case .unableToComplete:
                         self.alertItem = AlertContext.unableToComplete
                         self.alertType = .unableToComplete
@@ -147,6 +153,9 @@ final class PhotosViewModel:ObservableObject{
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
                     self.alertType = .invalidURL
+                case .invalidCredentials:
+                    self.alertItem = AlertContext.invalidCredentials
+                    self.alertType = .invalidCredentials
                 case .invalidResponse:
                     self.alertItem = AlertContext.invalidData
                     self.alertType = .invalidData
@@ -191,6 +200,9 @@ final class PhotosViewModel:ObservableObject{
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
                     self.alertType = .invalidData
+                case .invalidCredentials:
+                    self.alertItem = AlertContext.invalidCredentials
+                    self.alertType = .invalidCredentials
                 case .invalidURL:
                     self.alertItem = AlertContext.invalidURL
                     self.alertType = .invalidURL

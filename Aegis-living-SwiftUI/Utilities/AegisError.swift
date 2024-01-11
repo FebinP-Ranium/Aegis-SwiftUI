@@ -11,4 +11,6 @@ enum AGError:Error{
     case invalidResponse
     case invalidData
     case unableToComplete
+    case invalidCredentials
+
 }

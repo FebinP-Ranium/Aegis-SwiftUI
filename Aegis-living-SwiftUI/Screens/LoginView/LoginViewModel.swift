@@ -39,6 +39,9 @@ final class LoginViewModel:ObservableObject{
                 }
             case .failure(let error):
                 switch error{
+                case .invalidCredentials:
+                    self.alertItem = AlertContext.invalidCredentials
+                    self.alertType = .invalidCredentials
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
                     self.alertType = .invalidData

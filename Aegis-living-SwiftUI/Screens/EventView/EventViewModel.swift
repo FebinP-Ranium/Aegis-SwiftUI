@@ -43,6 +43,9 @@ final class EventViewModel:ObservableObject{
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
                     self.alertType = .unableToComplete
+                case .invalidCredentials:
+                    self.alertItem = AlertContext.invalidCredentials
+                    self.alertType = .invalidCredentials
                 }
             }
             

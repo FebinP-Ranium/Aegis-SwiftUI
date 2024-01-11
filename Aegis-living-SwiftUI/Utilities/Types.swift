@@ -17,6 +17,7 @@ enum AlertType{
     case passwordSuccess
     case passwordMisMatch
     case passwordUnsuccessful
+    case invalidCredentials
 }
 enum MemoirType{
     case memoirAnswer

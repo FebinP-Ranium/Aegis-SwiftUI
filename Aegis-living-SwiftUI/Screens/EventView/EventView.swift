@@ -139,6 +139,7 @@ struct EventListView:View{
                            .padding()
         }
         else{
+            
             List {
                 ForEach(0..<viewModel.eventDataList.count, id: \.self) { index in
                     

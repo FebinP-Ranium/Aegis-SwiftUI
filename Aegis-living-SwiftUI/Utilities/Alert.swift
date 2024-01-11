@@ -32,6 +32,7 @@ struct AlertContext{
     /// ////////////////////////////////////////////////////////////////////////////////////////
     // MARK: - Network Alert
     /// ////////////////////////////////////////////////////////////////////////////////////////
+    /// 
     static let invalidData = AlertItem(title: Text("Server Error"),
                                        message: Text("The data recieved from server is invalid"),
                                               dismissButtonText: Text("OK"))
@@ -44,6 +45,7 @@ struct AlertContext{
     static let unableToComplete = AlertItem(title: Text("Internet Issue"),
                                             message: Text("Unable to complete the request, please check internet"),
                                            dismissButtonText: Text("OK"))
+  
     
     /// ////////////////////////////////////////////////////////////////////////////////////////
     // MARK: - Account Alert

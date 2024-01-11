@@ -65,7 +65,12 @@ final class NetworkManager {
                     do{
                         let decoder = JSONDecoder()
                         let model = try decoder.decode(FailModel.self, from: data)
-                        completionHandler(.failure(.invalidData))
+                        if model.error == "invalid_credentials"{
+                            completionHandler(.failure(.invalidCredentials))
+                        }
+                        else{
+                            completionHandler(.failure(.invalidData))
+                        }
                         return
                     }
                     catch{
