@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 final class EngagementViewModel:ObservableObject{
     let userManager = UserDataManager()
     @Published var isLoading = false
@@ -49,9 +50,11 @@ final class EngagementViewModel:ObservableObject{
                 case .unableToComplete:
                     self.alertItem = AlertContext.unableToComplete
                     self.alertType = .unableToComplete
-                case .invalidCredentials:
-                    self.alertItem = AlertContext.invalidCredentials
-                    self.alertType = .invalidCredentials
+                case .apiError(let errorMessage):
+                    self.alertItem = AlertItem(title: Text("Error"),
+                                            message:  Text(errorMessage),
+                                            dismissButtonText: Text("OK"))
+                    self.alertType = .apiError
                 }
             }
             

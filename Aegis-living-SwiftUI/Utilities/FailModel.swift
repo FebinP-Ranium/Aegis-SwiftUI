@@ -7,5 +7,5 @@
 
 import Foundation
 struct FailModel:Codable{
-        let error: String
+        let error: String?
 }

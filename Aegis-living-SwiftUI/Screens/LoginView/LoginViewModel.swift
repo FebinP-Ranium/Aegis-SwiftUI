@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 final class LoginViewModel:ObservableObject{
     @Published var userName = ""
     @Published var password = ""
@@ -39,9 +40,11 @@ final class LoginViewModel:ObservableObject{
                 }
             case .failure(let error):
                 switch error{
-                case .invalidCredentials:
-                    self.alertItem = AlertContext.invalidCredentials
-                    self.alertType = .invalidCredentials
+                case .apiError(let errorMessage):
+                    self.alertItem = AlertItem(title: Text("Error"),
+                                            message:  Text(errorMessage),
+                                            dismissButtonText: Text("OK"))
+                    self.alertType = .apiError
                 case .invalidData:
                     self.alertItem = AlertContext.invalidData
                     self.alertType = .invalidData
